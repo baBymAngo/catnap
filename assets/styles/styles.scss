@@ -76,9 +76,9 @@
 	.project-section {
 		padding: 3em 0;
 		position: relative;
-		border-top: 1px solid $hr-grey;
+		border-top: 1px solid grey;
 		@extend %clearfix;
-		&:nth-child(even) { background: lighten($hr-grey, 5%); }
+		&:nth-child(even) { background: lighten(grey, 5%); }
 		&:first-child {
 		 padding-top: 0;
 		 border-top: none;
