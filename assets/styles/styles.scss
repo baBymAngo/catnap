@@ -51,6 +51,7 @@
 }
 
 // Services
+
 .services {
 	padding: 100px 0;
 	text-align: center;
@@ -66,6 +67,7 @@
 		margin-top: 30px;
 	}
 }
+
 .services-list {
 	margin-top: 60px;
 	li {
@@ -80,8 +82,6 @@
 	}
 }
 
-
-
 .social-footer {
 	.instagram-wrapper { 
 		position: relative;
@@ -89,7 +89,7 @@
 	#instagram {
 		position: relative;
 		width: 100%;
-		background: grey;
+		background: $neutral-10;
 	}
 	.overlay {
 		@extend %absolute-center;
@@ -126,9 +126,9 @@
 	.project-section {
 		padding: 3em 0;
 		position: relative;
-		border-top: 1px solid grey;
+		border-top: 1px solid $neutral-10;
 		@extend %clearfix;
-		&:nth-child(even) { background: lighten(grey, 5%); }
+		&:nth-child(even) { background: lighten($neutral-10, 5%); }
 		&:first-child {
 		 padding-top: 0;
 		 border-top: none;
