@@ -1,9 +1,9 @@
-Title: Kirby
+Title: Catnap
 ----
-Author: Bastian Allgeier
+Author: Kyle Decker, Liam Scott
 ----
-Description: Kirby is awesome
+Description: Catnap is a Web Design Studio located in Greensboro, NC
 ----
-Keywords: kirby, cms, kirbycms, php, filesystem
+Keywords: design, development, small business, innovation
 ----
-Copyright: © 2009-(date: Year) (link: http://bastianallgeier.com text: Bastian Allgeier)
+Copyright: © 2014
