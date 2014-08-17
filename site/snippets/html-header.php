@@ -9,6 +9,7 @@
   <meta name="robots" content="index, follow" />
 
   <?php echo css('assets/styles/styles.css') ?>
+  <?php echo js('vendors/jquery-1.11.1.min.js') ?>
 
 </head>
 

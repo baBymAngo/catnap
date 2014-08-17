@@ -19,7 +19,6 @@ Our work wouldn't be possible without the dozens of designers and developers who
 - Typed.js <http://www.mattboldt.com/demos/typed-js/>
 - Scroller.js <https://github.com/benplum/Scroller>
 - Classie.js <https://github.com/desandro/classie>
-- Google Fonts <https://www.google.com/fonts>
 
 ## Contact
 
