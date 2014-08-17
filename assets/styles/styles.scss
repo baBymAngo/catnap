@@ -8,6 +8,13 @@
 	position: relative;
 	width: $pagewidth;
 	margin: 0 auto;
+	@extend %clearfix;
+}
+
+.hero {
+	width: 100%;
+	min-height : 400px;
+	background: yellow;
 }
 
 

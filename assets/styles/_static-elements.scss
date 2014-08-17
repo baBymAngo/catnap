@@ -1,7 +1,25 @@
 /***********************
         HEADER
 ************************/
+header {
+    height: $headerheight;
+    @extend %clearfix;
+}
+.logo {
+    @extend %vertical-center;
+    position: absolute;
+    left: 0;
+}
 
+.main-menu {
+    float: right;
+    line-height: $headerheight;
+
+    a {
+        padding: 10px 30px;
+        margin-left: 30px;    
+    }
+}
 
 
 
