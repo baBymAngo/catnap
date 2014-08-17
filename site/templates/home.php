@@ -10,9 +10,9 @@
         <ul class="services-list">
             <?php $services = $page->children()  ?>
             <?php foreach( $services as $service ): ?>
-                <li class="service">
-                    <h2><?= $service->title() ?></h2>
-                    <p><?= $service->blurb() ?></p>
+                <li class="service" itemscope itemtype="https://schema.org/Service">
+                    <h2 itemprop="name"><?= $service->title() ?></h2>
+                    <p itemprop="description"><?= $service->blurb() ?></p>
                 </li>
             <?php endforeach ?>
         </ul>
