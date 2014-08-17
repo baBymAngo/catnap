@@ -2596,7 +2596,8 @@ class str {
     if($keep_html) {
       return stripslashes(implode('', preg_replace('/^([^<].+[^>])$/e', "htmlentities('\\1', ENT_COMPAT, 'utf-8')", preg_split('/(<.+?>)/', $string, -1, PREG_SPLIT_DELIM_CAPTURE))));
     } else {
-      return htmlentities($string, ENT_COMPAT, 'utf-8');
+      $str = htmlentities($string, ENT_COMPAT, 'utf-8');
+      return SmartyPants($str);
     }
   }
 

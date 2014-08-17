@@ -1,17 +1,25 @@
-/* Brand Colors */
-$cat_red    : #E27D60; // Orange
-$cat_peach  : #FFC875; // Yellow
-$cat_brown  : #EEA868; // Dark Yellow
-$cat_purple : #A2655D; // Light Brown
-$cat_lav    : #83605D; // Dark Brown
-$cat_beige  : #F8F2E6;
+/* Colors */ 
+$red:			#FD6D69;
+$orange:		#FF9F6D;
+$yellow: 		#FFD573;
+$green:			#A6E0A7;
+$blue:			#97D7F4;
+$purple:		#9E8FE7;
+
+$neutral-100:	#2D2C45; // Darkest
+$neutral-90:	#3C3C5A;
+$neutral-80:	#4C4D6C;
+$neutral-70:	#5F6185;
+$neutral-60:	#7C80A7;
+$neutral-50:	#9CA1C4;
+$neutral-40:	#B8BEDB;
+$neutral-30:	#D8DDF0;
+$neutral-20:	#E6EAF5;
+$neutral-10:	#F2F4FA;
+$neutral-0:		#FFFFFF; // Lightest
 
 /* Site Colors */
 $body-bg : white;
-$home-bg : $cat_red;
-$body-txt : #aaa;
-$header-txt : #888;
-$hr-grey : #e7e7e7;
 
 $pagewidth: 1100px;
 $headerheight: 70px;

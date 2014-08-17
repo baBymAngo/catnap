@@ -181,7 +181,7 @@ texts which are parsed by kirbytext()
 */
 
 // smartypants
-c::set('smartypants', false);
+c::set('smartypants', true);
 c::set('smartypants.attr', 1);
 c::set('smartypants.doublequote.open', '&#8220;');
 c::set('smartypants.doublequote.close', '&#8221;');

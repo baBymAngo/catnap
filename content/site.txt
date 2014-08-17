@@ -2,7 +2,7 @@
 ----
 Author: Kyle Decker, Liam Scott
 ----
-Description: Catnap is a Web Design Studio located in Greensboro, NC
+Description: We are Catnap: a creative team of two, excited to showcase great ideas via the web. We believe in honest design, elegant code, and candid speech. In cultivating what matters and ditching the rest.
 ----
 Keywords: design, development, small business, innovation
 ----

@@ -6,7 +6,7 @@
 
 .margin-container {
 	position: relative;
-	width: $pagewidth;
+	max-width: $pagewidth;
 	margin: 0 auto;
 	@extend %clearfix;
 }
@@ -28,8 +28,8 @@
 }
 @keyframes blink{
     0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+    20% { opacity: 1; }
+    100% { opacity:0; }
 }
 
 .social-footer {
