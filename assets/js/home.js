@@ -1,11 +1,10 @@
 (function(){
 	var arr = $('.adjectives').data('adjectives').split(", ");
-	console.log(arr);
-	arr.forEach(function (element, index) {
-	});
-	$('#typed-text').typed({
-		strings: [
+	$('#typed-txt').typed({
+		strings: arr,
+		typeSpeed: 150, 
+        backDelay: 3000, 
+        loop: true
 
-		]
 	})
 })();

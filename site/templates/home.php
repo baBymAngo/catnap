@@ -3,8 +3,10 @@
 <main class="wrapper">
 	<div class="hero">
 		<?php snippet('header') ?>
-        <meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
-        <span class="banner-txt">Websited with <span id="typed-txt"></span><span id="typed-cursor"></span></span>
+        <div class="margin-container">
+            <meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
+            <h2 class="banner-txt">Websites with <span id="typed-txt"></span><span id="typed-cursor"></span></h2>
+        </div>
 	</div>
 
 	<section class="services">
