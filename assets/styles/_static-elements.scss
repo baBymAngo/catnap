@@ -23,7 +23,7 @@ p {
 ************************/
 header {
     height: $headerheight;
-    padding-bottom: 100px;
+    padding-bottom: 160px;
     @extend %clearfix;
 }
 .logo {
@@ -41,7 +41,7 @@ header {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 17px;
-        letter-spacing: 1px;   
+        letter-spacing: 2px;   
     }
 }
 
