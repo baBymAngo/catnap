@@ -1,9 +1,19 @@
-Title: Catnap
+﻿Title: Catnap
 ----
 Author: Kyle Decker, Liam Scott
 ----
 Description: Catnap is a Web Design Studio located in Greensboro, NC
 ----
 Keywords: design, development, small business, innovation
+----
+Address: 20 Amber Drive
+----
+City: Horse Shoe
+----
+State: NC
+----
+Postcode: 28742
+----
+Country: US
 ----
 Copyright: © 2014

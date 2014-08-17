@@ -3,6 +3,8 @@
 <main class="wrapper">
 	<div class="hero">
 		<?php snippet('header') ?>
+        <meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
+        <span class="banner-txt">Websited with <span id="typed-txt"></span><span id="typed-cursor"></span></span>
 	</div>
 
 	<section class="services">
@@ -26,7 +28,8 @@
     </section>
 </main>
 
-<script src="assets/js/instafeed.min.js"></script>
+<script src="assets/js/vendors/typed.js"></script>
+<script src="assets/js/vendors/instafeed.min.js"></script>
 <script src="assets/js/home.js"></script>
 
 <?php snippet('footer') ?>
