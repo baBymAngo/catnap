@@ -20,6 +20,8 @@ $neutral-0:		#FFFFFF; // Lightest
 
 /* Site Colors */
 $body-bg : white;
+$txt     : $neutral-50;
+$header  : $neutral-80;
 
 $pagewidth: 1100px;
 $headerheight: 70px;
@@ -49,6 +51,15 @@ $headerheight: 70px;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+/* Mixins */
+@mixin button($background: $neutral-80) {
+	display: inline-block;
+	background: $background;
+	color: white;
+	padding: 15px 27px;
+	border-radius: 5px;
 }
 
 
