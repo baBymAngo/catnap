@@ -1,0 +1,45 @@
+/* Brand Colors */
+$cat_red    : #E27D60; // Orange
+$cat_peach  : #FFC875; // Yellow
+$cat_brown  : #EEA868; // Dark Yellow
+$cat_purple : #A2655D; // Light Brown
+$cat_lav    : #83605D; // Dark Brown
+$cat_beige  : #F8F2E6;
+
+/* Site Colors */
+$body-bg : white;
+$home-bg : $cat_red;
+$body-txt : #aaa;
+$header-txt : #888;
+$hr-grey : #e7e7e7;
+
+$pagewidth: 1100px;
+
+
+/* Silents */
+%clearfix {
+	&:before,
+	&:after {
+	    content: " ";
+	    display: table;
+	  }
+	  &:after { clear: both; }
+}
+%absolute-center {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+%horizontal-center {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+%vertical-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
