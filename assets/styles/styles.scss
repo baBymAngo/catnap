@@ -16,21 +16,20 @@
 	min-height : 400px;
 	background: $neutral-100;
 	color: white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 	padding: 25px 0 120px; 
 	.hero-header {
 		color: inherit;
-		padding-bottom: 25px;
+		margin: 0;
 	}
 	.hero-copy {
-		width: 35%;
-		font-size: 18px;
-		color: inherit;
-		padding-bottom: 55px;	
+		max-width: 450px;
+		color: $neutral-40;
+		margin: 2em 0;	
 	}
 	.hero-link-block a {
 		@include button();
-		margin-left: 23px;
-		&:first-child { margin-left: 0; }
+		margin-right: 1.5em;
 	}
 }
 
@@ -40,14 +39,25 @@
 ***********************/
 
 // Hero
-.typed-cursor{
+.typed-cursor {
+	display: inline-block;
+	width: 2px;
+	height: 100%;
+	background: #fff;
+	border-radius: 5px;
+	color: transparent;
+	margin-left: 10px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	overflow: hidden; // Hide default pipe
+	vertical-align: top;
     opacity: 1;
     animation: blink 1s infinite;
 }
 @keyframes blink{
-    0% { opacity:1; }
-    20% { opacity: 1; }
-    100% { opacity:0; }
+    0%   { opacity: 1; }
+    50%  { opacity: 1; }
+    75%  { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 // Services
