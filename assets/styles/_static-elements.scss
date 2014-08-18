@@ -4,6 +4,9 @@
 body {
     font: 400 18px/1.6 'Lato', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
     color: $txt;
+    ::selection {
+      background: $neutral-40;
+    }
 }
 
 h1, h2, h3 {
