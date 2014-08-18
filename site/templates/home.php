@@ -23,14 +23,16 @@
                 <?php $services = $services->children()  ?>
                 <?php foreach( $services as $service ): ?>
                     <li class="service" itemscope itemtype="https://schema.org/Service">
-                        <?php if ( $service->hasImages() ) {
-                            $src = $service->images()->last()->url();
-                        } else {
-                            $src = "";
-                        } ?>
-                        <img src="<?= $src ?>" alt="<?= $service->title() ?>" class="section-thumb" itemprop="image">
-                        <h2 itemprop="name"><?= html( $service->title() ) ?></h2>
-                        <p itemprop="description"><?= html( $service->blurb() ) ?></p>
+                        <div class="service-wrapper">
+                            <?php if ( $service->hasImages() ) {
+                                $src = $service->images()->last()->url();
+                            } else {
+                                $src = "";
+                            } ?>
+                            <img src="<?= $src ?>" alt="<?= $service->title() ?>" class="section-thumb" itemprop="image">
+                            <h2 itemprop="name"><?= html( $service->title() ) ?></h2>
+                            <p itemprop="description"><?= html( $service->blurb() ) ?></p>
+                        </div>
                     </li>
                 <?php endforeach ?>
             </ul>

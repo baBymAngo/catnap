@@ -5,3 +5,4 @@ docs
 site/config/
 site/config/config.php
 assets/styles/.sass-cache
+config.codekit

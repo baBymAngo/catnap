@@ -83,16 +83,25 @@
 
 .services-list {
 	margin-top: 60px;
-	li {
-		display: inline-block;
-		width: 33%;
-		padding: 40px;
+	background: radial-gradient(center, ellipse closest-side, $neutral-40 0%, $body-bg 100%);
+	@extend %clearfix;
+	.service {
+		float: left;
+		width: 33.3333%;
 		text-align: center;
 		vertical-align: top;
+		padding-right: 1px;
+		padding-bottom: 1px;
+		&:nth-child(3n+3) { padding-right: 0; }
+		&:nth-last-child(-n+3) { padding-bottom: 0; } // Last row
 		h2 {
 			padding-bottom: 20px;
 		}
 	}
+}
+.service-wrapper {
+	background: #fff;
+	padding: 40px;
 }
 
 .social-footer {
