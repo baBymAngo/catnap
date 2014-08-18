@@ -36,10 +36,9 @@
         </div>
     </section>
 
-    <section class="instagram-section">
+    <section class="instagram-block">
         <div class="instagram-wrapper">
             <div id="instagram"></div>
-            <div class="overlay"></div>
         </div>  
     </section>
 </main>
