@@ -52,5 +52,3 @@
 
 <?php snippet('footer') ?>
 <?php snippet('html-footer') ?>
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nobis quibusdam nemo perferendis nulla illo.

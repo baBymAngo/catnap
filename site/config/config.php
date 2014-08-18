@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', 'http://localhost/catnap');
+c::set('url', 'http://localhost');
 
 
 /* 
@@ -89,7 +89,7 @@ http://yourdomain.com/index.php/about
 
 */
 
-c::set('rewrite', true);
+c::set('rewrite', false);
 
 
 /* 
