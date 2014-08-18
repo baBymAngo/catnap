@@ -104,27 +104,20 @@
 	padding: 60px;
 }
 
-.social-footer {
+.instagram-block {
 	.instagram-wrapper { 
 		position: relative;
 	}
 	#instagram {
 		position: relative;
 		width: 100%;
-		background: $neutral-10;
-	}
-	.overlay {
-		@extend %absolute-center;
-		position: absolute;
-		z-index: 1;
-		h2 {
-			color: white;
-			width: auto;
-		}
+		background: $neutral-100;
+		@extend %clearfix;
 	}
 	.shot {
-		display: inline-block;
-		width: 16.6%;
+		display: block;
+		float: left;
+		width: 16.662%;
 		opacity: 0.2;
 		transition: opacity 0.5s ease;
 		&:hover { opacity: 1; }
