@@ -61,10 +61,13 @@
 }
 
 // Services
-
 .services {
 	padding: 100px 0;
 	text-align: center;
+	.section-thumb {
+		width: 120px;
+		padding-bottom: 35px;
+	}
 	.section-header {
 		padding-bottom: 30px;
 	}
