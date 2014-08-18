@@ -20,7 +20,7 @@ $neutral-0:		#FFFFFF; // Lightest
 
 /* Site Colors */
 $body-bg : $neutral-0;
-$txt     : $neutral-50;
+$txt     : desaturate($neutral-60, 10%);
 $header  : $neutral-80;
 
 $pagewidth: 1100px;
@@ -54,15 +54,24 @@ $headerheight: 70px;
 }
 
 /* Mixins */
-@mixin button($background: $neutral-80) {
+@mixin button($background: $neutral-80, $has-arrow: false) {
 	display: inline-block;
-	background: $background;
+	background-color: $background;
 	color: white;
-	padding: 15px 27px;
+	padding: 20px 30px;
 	border-radius: 5px;
 	transition: background 0.2s ease;
+	@if $has-arrow {
+		&:after {
+			content: '';
+			background-image: url(../images/arrow.svg);
+			background-repeat: no-repeat;
+			background-position: right center;
+			padding-right: 30px;
+		}
+	}
 	&:hover {
-		background: $neutral-70;
+		background-color: $neutral-70;
 	}
 }
 

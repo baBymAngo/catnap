@@ -76,7 +76,7 @@
 		margin: 0 auto;
 	}
 	a {
-		@include button($neutral-90);
+		@include button($neutral-90, true);
 		margin-top: 30px;
 	}
 }
@@ -101,7 +101,7 @@
 }
 .service-wrapper {
 	background: #fff;
-	padding: 40px;
+	padding: 60px;
 }
 
 .social-footer {
