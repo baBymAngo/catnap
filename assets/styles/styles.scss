@@ -13,7 +13,6 @@
 
 .hero {
 	width: 100%;
-	min-height : 400px;
 	background: $neutral-100;
 	color: white;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
@@ -24,6 +23,7 @@
 	}
 	.hero-copy {
 		max-width: 450px;
+		font-weight: 300;
 		color: $neutral-40;
 		margin: 2em 0;	
 	}
@@ -44,8 +44,7 @@
 	width: 2px;
 	height: 100%;
 	background: #fff;
-	border-radius: 5px;
-	color: transparent;
+	border-radius: 3px;
 	margin-left: 10px;
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 	overflow: hidden; // Hide default pipe
@@ -53,10 +52,11 @@
     opacity: 1;
     animation: blink 1s infinite;
 }
-@keyframes blink{
-    0%   { opacity: 1; }
-    50%  { opacity: 1; }
-    75%  { opacity: 0; }
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
     100% { opacity: 0; }
 }
 
