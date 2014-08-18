@@ -20,7 +20,7 @@ $neutral-0:		#FFFFFF; // Lightest
 
 /* Site Colors */
 $body-bg : $neutral-0;
-$txt     : desaturate($neutral-60, 10%);
+$txt     : $neutral-70;
 $header  : $neutral-80;
 
 $pagewidth: 1100px;

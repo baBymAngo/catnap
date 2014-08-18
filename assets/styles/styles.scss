@@ -16,14 +16,15 @@
 	background: $neutral-100;
 	color: white;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-	padding: 25px 0 120px; 
+	padding: 25px 0 120px;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; // Stop light text from appearing bold on dark background
 	.hero-header {
 		color: inherit;
 		margin: 0;
 	}
 	.hero-copy {
 		max-width: 450px;
-		font-weight: 300;
 		color: $neutral-40;
 		margin: 2em 0;	
 	}
@@ -83,7 +84,7 @@
 
 .services-list {
 	margin-top: 60px;
-	background: radial-gradient(center, ellipse closest-side, $neutral-40 0%, $body-bg 100%);
+	background: radial-gradient(center, ellipse closest-side, $neutral-30 0%, $body-bg 100%);
 	@extend %clearfix;
 	.service {
 		float: left;
