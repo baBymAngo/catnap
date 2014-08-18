@@ -3,3 +3,4 @@ panel/
 site/panel
 docs
 site/config/config.php
+assets/styles/.sass-cache
