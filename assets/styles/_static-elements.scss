@@ -4,9 +4,15 @@
 body {
     font: 400 18px/1.6 'Lato', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
     color: $txt;
+<<<<<<< HEAD
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: "liga", "kern";
+=======
+    ::selection {
+      background: $neutral-40;
+    }
+>>>>>>> FETCH_HEAD
 }
 
 h1, h2, h3 {
