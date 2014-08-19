@@ -58,7 +58,7 @@ $headerheight: 70px;
 	display: inline-block;
 	background-color: $background;
 	color: white;
-	padding: 20px 30px;
+	padding: 15px 25px;
 	border-radius: 5px;
 	transition: background 0.2s ease;
 	@if $has-arrow {
@@ -67,7 +67,7 @@ $headerheight: 70px;
 			background-image: url(../images/arrow.svg);
 			background-repeat: no-repeat;
 			background-position: right center;
-			padding-right: 30px;
+			padding-right: 25px;
 		}
 	}
 	&:hover {
