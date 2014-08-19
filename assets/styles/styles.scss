@@ -83,18 +83,18 @@
 	margin-top: 60px;
 	background: radial-gradient(center, ellipse closest-side, $neutral-30 0%, $body-bg 100%);
 	@extend %clearfix;
-	.service {
-		float: left;
-		width: 33.3333%;
-		text-align: center;
-		vertical-align: top;
-		padding-right: 1px;
-		padding-bottom: 1px;
-		&:nth-child(3n+3) { padding-right: 0; }
-		&:nth-last-child(-n+3) { padding-bottom: 0; } // Last row
-		h2 {
-			padding-bottom: 20px;
-		}
+}
+.service {
+	float: left;
+	width: 33.3333%;
+	text-align: center;
+	vertical-align: top;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	&:nth-child(3n+3) { padding-right: 0; }
+	&:nth-last-child(-n+3) { padding-bottom: 0; } // Last row
+	h2 {
+		padding-bottom: 20px;
 	}
 }
 .service-wrapper {
