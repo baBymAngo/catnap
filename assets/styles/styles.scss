@@ -13,29 +13,34 @@
 
 .hero {
 	position: relative;
+	overflow: hidden;
 	width: 100%;
+	padding-bottom: 18px;
+}
+.hero-bg {
 	background: $neutral-90;
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 	padding: 25px 0 120px;
-	.hero-header {
-		color: inherit;
-		margin: 0;
-	}
-	.hero-copy {
-		max-width: 450px;
-		color: $neutral-30;
-		margin: 2em 0;	
-	}
-	.hero-link-block a {
-		@include button();
-		margin-right: 1.5em;
-	}
-	.hero-image {
-		position: absolute;
-		bottom: -15px;
-		left: 700px;
-	}
+}
+.hero-header {
+	color: inherit;
+	margin: 0;
+}
+.hero-copy {
+	max-width: 450px;
+	color: $neutral-30;
+	margin: 2em 0;	
+}
+.hero-link-block a {
+	@include button();
+	margin-right: 1.5em;
+}
+.hero-image {
+	position: absolute;
+	bottom: 0;
+	left: 610px;
+	z-index: 5;
 }
 
 
