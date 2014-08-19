@@ -41,6 +41,7 @@
 	bottom: 0;
 	left: 610px;
 	z-index: 5;
+	pointer-events: none;
 }
 
 
@@ -77,6 +78,7 @@
 	.section-thumb {
 		width: 120px;
 		padding-bottom: 35px;
+		pointer-events: none;
 	}
 	.section-header {
 		padding-bottom: 30px;
