@@ -25,7 +25,3 @@
 		<a href="#"><i class="fa fa-instagram"></i></a>
 	</div>
 </footer>
-
-</body>
-
-</html>
