@@ -14,14 +14,18 @@ header {
 .logo {
     float: left;
     height: 100%;
-    .logo-letter {
-        animation: wave 0.5s ease;
-        animation-play-state: paused;
-    }
-    &:hover .logo-letter {
-        animation-play-state: running;
-    }
     svg { overflow: visible; }
+    &:hover { 
+        #logo-c { fill: $red; }
+        #logo-a1 { fill: $orange; }
+        #logo-t { fill: $yellow; }
+        #logo-n { fill: $green; }
+        #logo-a2 { fill: $blue; }
+        #logo-p { fill: $purple; }
+    }
+    &.animated .logo-letter {
+        animation: wave 0.5s ease; // rainbow 0.3s ease;
+    }
 }
 
 #logo-c { animation-delay: 0s }
@@ -30,26 +34,22 @@ header {
 #logo-n { animation-delay: 0.15s }
 #logo-a2 { animation-delay: 0.2s }
 #logo-p { animation-delay: 0.25s }
+
 @keyframes wave {
-    1% {
-        fill: $red;
-        transform: translateY(0);
-    }
-    20% {
-        fill: $orange;
-        transform: translateY(2px);
-    }
-    40% { fill: $yellow; }
-    50% { transform: translateY(-10px); }
-    60% { fill: $green; }
-    80% {
-        fill: $blue;
-        transform: translateY(2px); 
-    }
-    100% {
-        fill: $purple;
-        transform: translateY(0);
-    }
+    1% { transform: translateY(0); }
+    15% { transform: translateY(8px); }
+    55% { transform: translateY(-16px); }
+    60% { transform: translateY(-16px); }
+    80% { transform: translateY(8px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes rainbow {
+    1%, 19% { fill: $red; }
+    20%, 39% { fill: $yellow; }
+    40%, 59% { fill: $green; }
+    60%, 79% { fill: $blue; }
+    80%, 100% { fill: $purple; }
 }
 
 .main-menu {

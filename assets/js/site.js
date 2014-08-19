@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	$('.logo').on('hover', function() {
-    	this.style.webkitAnimationPlayState = "running";
-		$(this).on('webkitAnimationEnd', function() {
-	  		this.style.webkitAnimationPlayState = "paused";
-	  	});	        
+	$('.logo').on('mouseenter', function() {
+		$(this).addClass('animated');
+		setTimeout(function(){
+			$('.logo').removeClass('animated');
+		}, 800);
 	});
 });
