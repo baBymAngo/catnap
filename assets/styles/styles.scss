@@ -1,4 +1,4 @@
-@import 'reset.css', '_typography.scss', '_variables.scss', '_static-elements.scss';
+@import 'reset.css', '_variables.scss', '_typography.scss', '_static-elements.scss';
 
 /***********************
 	 UTILITY CLASSES
@@ -71,7 +71,6 @@
 		padding-bottom: 30px;
 	}
 	.section-subheader {
-		width: 50%;
 		margin: 0 auto;
 	}
 	a {
@@ -110,20 +109,17 @@
 	#instagram {
 		position: relative;
 		width: 100%;
-		background: $neutral-100;
+		background: $neutral-0;
 		@extend %clearfix;
 	}
 	.shot {
 		display: block;
 		float: left;
 		width: 16.662%;
-		opacity: 0.2;
-		transition: opacity 0.5s ease;
+		overflow: hidden;
+		opacity: 0.8;
+		transition: opacity 0.3s ease;
 		&:hover { opacity: 1; }
-		img {
-			width: 100%;
-			height: auto;
-		}
 	}
 }
 
