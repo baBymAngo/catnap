@@ -17,19 +17,16 @@ body {
 ************************/
 
 header {
-    height: $headerheight;
-    padding-bottom: 160px;
+    padding: 40px 0;
     @extend %clearfix;
 }
 .logo {
-    @extend %vertical-center;
-    position: absolute;
-    left: 0;
+    float: left;
+    height: 100%;
 }
 
 .main-menu {
     float: right;
-    line-height: $headerheight;
     a {
         padding: 0.8em 1em;
         border-radius: 4px;
