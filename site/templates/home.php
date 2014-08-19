@@ -24,7 +24,7 @@
                 <?php foreach( $services as $service ): ?>
                     <li class="service" itemscope itemtype="https://schema.org/Service">
                         <div class="service-wrapper">
-                            <?php $src = $service->images()->last()->url() ?>
+                            <?php $src = $service->images()->first()->url() ?>
                             <img src="<?= $src ?>" alt="<?= $service->title() ?>" class="section-thumb" itemprop="image">
                             <h2 itemprop="name"><?= html( $service->title() ) ?></h2>
                             <p itemprop="description"><?= html( $service->blurb() ) ?></p>

@@ -4,15 +4,12 @@
 body {
     font: 400 18px/1.6 'Lato', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
     color: $txt;
-<<<<<<< HEAD
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: "liga", "kern";
-=======
     ::selection {
       background: $neutral-40;
     }
->>>>>>> FETCH_HEAD
 }
 
 h1, h2, h3 {
@@ -47,11 +44,16 @@ header {
     float: right;
     line-height: $headerheight;
     a {
-        padding: 9px 20px;
+        padding: 9px 18px;
+        border-radius: 4px;
         color: white; 
         text-transform: uppercase;
         font-size: 0.9em;
-        letter-spacing: 2px;   
+        letter-spacing: 2px;
+        transition: background 0.2s ease;
+        &:hover {
+            background: $neutral-90;
+        }   
     }
 }
 

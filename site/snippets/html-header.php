@@ -3,14 +3,17 @@
 <head>
   
   <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
-  <meta charset="utf-8" />
   <meta name="description" content="<?php echo html($site->description()) ?>" />
   <meta name="keywords" content="<?php echo html($site->keywords()) ?>" /> 
-  <meta name="robots" content="index, follow" />	
-	
-  <?php echo css('assets/styles/styles.css') ?>
-  <?php echo js('assets/js/vendors/jquery-1.11.1.min.js') ?>
 
+  <meta charset="utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	
+  <?= css('assets/styles/styles.css') ?>
+  <?= js('assets/js/vendors/modernizr.min.js') ?>
+  <?= js('//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js') ?>
 </head>
 
 <body>
