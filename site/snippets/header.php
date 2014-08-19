@@ -1,6 +1,6 @@
 <header>		
 	<div class="margin-container">		
-	    <a class="logo" href="<?= url('home') ?>"><img src="<?= url('assets/images/logo.svg') ?>" alt="<?= $site->title() ?>"></a>
+	    <a class="logo" href="<?= url('home') ?>"><?php include(__DIR__.'/../../assets/images/catnap.svg') ?></a>
 		<nav class="main-menu">
 	    	<?php foreach($pages->visible() as $p): ?>
 	    	<a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>"><?php echo html($p->title()) ?></a></li>

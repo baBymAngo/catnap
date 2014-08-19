@@ -44,6 +44,7 @@
 	bottom: -18px;
 	left: 500px;
 	z-index: 5;
+	pointer-events: none;
 }
 
 
@@ -80,6 +81,7 @@
 	.section-thumb {
 		width: 120px;
 		padding-bottom: 35px;
+		pointer-events: none;
 	}
 	.section-header {
 		padding-bottom: 30px;
