@@ -1,30 +1,19 @@
 /***********************
         DEFAULTS
 ************************/
-body {
-    font: 400 18px/1.6 'Lato', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
-    color: $txt;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-font-feature-settings: "liga", "kern";
-    ::selection {
-      background: $neutral-40;
-    }
-}
+
 
 /***********************
         HEADER
 ************************/
 
 header {
-    height: $headerheight;
-    padding-bottom: 160px;
+    padding: 40px 0;
     @extend %clearfix;
 }
 .logo {
-    @extend %vertical-center;
-    position: absolute;
-    left: 0;
+    float: left;
+    height: 100%;
     .logo-letter {
         animation: wave 1s ease alternate;
         animation-play-state: paused;
@@ -50,12 +39,10 @@ header {
     100% {
         transform: translateY(0);   
     }
-
 }
 
 .main-menu {
     float: right;
-    line-height: $headerheight;
     a {
         padding: 0.8em 1em;
         border-radius: 4px;
