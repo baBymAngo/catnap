@@ -12,6 +12,8 @@
                 <a href="<?= url('about') ?>">Meet the team</a>
             </div>
         </div>
+        <img src="<?= $page->images()->find('MacBook.png')->url() ?>" alt="" class="hero-image">
+        
 	</div>
 
 	<section class="services">

@@ -12,6 +12,7 @@
 }
 
 .hero {
+	position: relative;
 	width: 100%;
 	background: $neutral-100;
 	color: white;
@@ -29,6 +30,11 @@
 	.hero-link-block a {
 		@include button();
 		margin-right: 1.5em;
+	}
+	.hero-image {
+		position: absolute;
+		bottom: -15px;
+		left: 700px;
 	}
 }
 
