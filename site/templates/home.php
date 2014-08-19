@@ -2,18 +2,19 @@
 
 <main class="wrapper">
 	<div class="hero">
-		<?php snippet('header') ?>
-        <div class="margin-container">
-            <meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
-            <h1 class="hero-header">Websites with <span id="typed-txt"></span><span id="typed-cursor"></span></h1>
-            <p class="hero-copy"><?= $site->description() ?></p>
-            <div class="hero-link-block">
-                <a href="<?= url('works') ?>">See our work</a>
-                <a href="<?= url('about') ?>">Meet the team</a>
+        <div class="hero-bg">
+    		<?php snippet('header') ?>
+            <div class="margin-container">
+                <meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
+                <h1 class="hero-header">Websites with <span id="typed-txt"></span><span id="typed-cursor"></span></h1>
+                <p class="hero-copy"><?= $site->description() ?></p>
+                <div class="hero-link-block">
+                    <a href="<?= url('works') ?>">See our work</a>
+                    <a href="<?= url('about') ?>">Meet the team</a>
+                </div>
             </div>
+            <img src="<?= $page->images()->find('MacBook.png')->url() ?>" alt="" class="hero-image">
         </div>
-        <img src="<?= $page->images()->find('MacBook.png')->url() ?>" alt="" class="hero-image">
-        
 	</div>
 
 	<section class="services">
