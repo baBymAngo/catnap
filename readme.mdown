@@ -10,15 +10,22 @@ The code for our site lives here, free for anyone to peruse and ogle.
 
 Our work wouldn't be possible without the dozens of designers and developers who spend their time creating products that aid what we do. Here are little chunks of awesome that help to make Catnap a reality:
 
-- Kirby <http://getkirby.com>
-- Codekit <https://incident57.com/codekit/>
-- Transmit <http://panic.com/transmit/>
-- Sublime Text <http://www.sublimetext.com>
-- MAMP <http://www.mamp.info/en/>
-- Instafeed <http://instafeedjs.com>
-- Typed.js <http://www.mattboldt.com/demos/typed-js/>
-- Scroller.js <https://github.com/benplum/Scroller>
-- Classie.js <https://github.com/desandro/classie>
+- Applications
+	- Codekit <https://incident57.com/codekit/>
+	- Github for Mac <https://mac.github.com/> and Windows <https://windows.github.com/>
+	- Koala <http://koala-app.com/>
+	- MAMP <http://www.mamp.info/en/>
+	- Sketch <http://bohemiancoding.com/sketch/>
+	- Sublime Text <http://www.sublimetext.com>
+	- Transmit <http://panic.com/transmit/>
+- Javascript Libraries
+	- Classie.js <https://github.com/desandro/classie>
+	- Instafeed <http://instafeedjs.com>
+	- JQuery <http://jquery.com/>
+	- Scroller.js <https://github.com/benplum/Scroller>
+	- Typed.js <http://www.mattboldt.com/demos/typed-js/>
+- Content Management System
+	- Kirby <http://getkirby.com>
 
 ## Contact
 
