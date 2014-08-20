@@ -147,62 +147,65 @@
 #project-scroller {
 	margin-top: 50px;
 	overflow: hidden;
-
-	.project-section {
-		padding: 3em 0;
-		position: relative;
-		border-top: 1px solid $neutral-10;
-		@extend %clearfix;
-		&:nth-child(even) { background: lighten($neutral-10, 5%); }
-		&:first-child {
-		 padding-top: 0;
-		 border-top: none;
-		}
+}
+.project-section {
+	padding: 3em 0;
+	position: relative;
+	border-top: 1px solid $neutral-10;
+	@extend %clearfix;
+	&:nth-child(even) { background: lighten($neutral-10, 5%); }
+	&:first-child {
+	 padding-top: 0;
+	 border-top: none;
 	}
-	.side {
-		width: 50%;
-		float: left;
-		margin: 0;
-		padding: 3em 4%;
-		overflow: hidden;
-		min-height: 12em;
+}
+.side {
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 3em 4%;
+	overflow: hidden;
+	min-height: 12em;
+	text-align: center;
+	@extend %clearfix;
+	h2 {
+		font-size: 48px;
 		text-align: center;
-		@extend %clearfix;
-		h2 {
-			font-size: 48px;
-			text-align: center;
-			margin-bottom: 35px;
-		}
-		p {
-			width: 70%;
-			margin: 0 auto;
-			font-size: 18px;
-		}
+		margin-bottom: 35px;
 	}
-	.side-right {
-		//text-align: right;
-		.browser { float: left; }
+	p {
+		width: 70%;
+		margin: 0 auto;
+		font-size: 18px;
 	}
-	.side-left {
-		//text-align: left;
-		.browser { float: right; }
-	}
+}
+.side-right {
+	//text-align: right;
+	.browser { float: left; }
+}
+.side-left {
+	//text-align: left;
+	.browser { float: right; }
+}
 
-	/* Initial State */
-	.init .side {
-		opacity: 0;
-		transform: translateX( 0 );
-	}
-	.init .side-left { transform: translateX(-80px); }
-	.init .side-right { transform: translateX(80px); }
+/* Initial State */
+.init .side {
+	opacity: 0;
+	transform: translateX( 0 );
+}
+.init .side-left { transform: translateX(-80px); }
+.init .side-right { transform: translateX(80px); }
 
-	/* Animated State */
-	.project-section.animate .side-left,
-	.project-section.animate .side-right {
-	    transition: transform 0.7s, opacity 0.7s;
-		transform: translateX(0);
-		opacity: 1;
-	}
+/* Animated State */
+.project-section.animate .side-left,
+.project-section.animate .side-right {
+    transition: transform 0.7s, opacity 0.7s;
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.ipad {
+	background: $neutral-30;
 }
 
 
