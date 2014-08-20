@@ -24,9 +24,9 @@
 						</span>
 						<p><?= $project->description() ?></p>
 						<a href="<?php $page->link() ?>">View Site</a>
+						<img src="http://placehold.it/650x400" alt="Project Thumbnail" class="project-thumb">
 					</article>
-				</div>
-				<img src="http://placehold.it/650x400" alt="Project Thumbnail" class="project-thumb">
+				</div>	
 			</section>
 		<?php endforeach ?>
 	</div>
