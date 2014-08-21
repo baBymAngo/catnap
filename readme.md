@@ -14,18 +14,18 @@ Our work wouldn't be possible without the dozens of designers and developers who
 	- Codekit <https://incident57.com/codekit/>
 	- Github for Mac <https://mac.github.com/> and Windows <https://windows.github.com/>
 	- Koala <http://koala-app.com/>
-	- MAMP <http://www.mamp.info/en/>
+	- MAMP <http://www.mamp.info/en/> and WAMP <http://www.wampserver.com/en/>
 	- Sketch <http://bohemiancoding.com/sketch/>
 	- Sublime Text <http://www.sublimetext.com>
 	- Transmit <http://panic.com/transmit/>
 - Javascript Libraries
-	- Classie.js <https://github.com/desandro/classie>
 	- Instafeed <http://instafeedjs.com>
 	- JQuery <http://jquery.com/>
-	- Scroller.js <https://github.com/benplum/Scroller>
 	- Typed.js <http://www.mattboldt.com/demos/typed-js/>
 - Content Management System
 	- Kirby <http://getkirby.com>
+- Hosting
+	- HostGator <http://www.hostgator.com/>
 
 ## Contact
 
