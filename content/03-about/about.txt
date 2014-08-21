@@ -1,1 +1,5 @@
 Title: About
+----
+Hero Header: Small yet mighty.
+----
+Hero Subheader: We're just two guys (and a cat), but our lack of manpower is made up in agility. We don't waste your time on directionless focus groups or ineffective management. We simply take your ideas and we create.
