@@ -23,8 +23,15 @@ $body-bg : $neutral-0;
 $txt     : $neutral-70;
 $header  : $neutral-80;
 
-$pagewidth: 1100px;
+$pagewidth: 1160px;
 $headerheight: 70px;
+
+/* Breakpoints */
+$breakpoint-full: 1000px;
+$breakpoint-large: 800px;
+$breakpoint-medium: 600px;
+$breakpoint-small: 410px;
+
 
 
 /* Silents */

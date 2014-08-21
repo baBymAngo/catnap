@@ -14,14 +14,15 @@
 			<meta itemprop="addressCountry" content="<?= html( $site->country() ) ?>">
 		</div>
 	</div>
-
-	<a class="footer-logo" href="<?= url('home') ?>"><img src="<?= url('assets/images/logo.svg') ?>" alt="<?= $site->title() ?>"></a>
-	<a href="mailto:bonjour@catnap.co">bonjour@catnap.co</a>
-	<span class="footer-msg">proudly made in greensboro, nc</span>
-	<div class="sm-footer">
-		<a href="#"><i class="fa fa-facebook"></i></a><br>
-		<a href="#"><i class="fa fa-tumblr"></i></a>
-		<a href="#"><i class="fa fa-dribble"></i></a>
-		<a href="#"><i class="fa fa-instagram"></i></a>
+	<div class="margin-container">
+		<a class="footer-logo" href="<?= url('home') ?>"><?php include(__DIR__.'/../../assets/images/catnap.svg') ?></a>
+		<nav class="footer-nav">
+				<a href="/">Home</a>
+			<?php foreach($pages->visible() as $p): ?>
+	    	<a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>"><?php echo html($p->title()) ?></a></li>
+	    	<?php endforeach ?>
+		</nav>
+		<a class="footer-email" href="mailto:bonjour@catnap.co">bonjour@catnap.co</a>
 	</div>
+	
 </footer>

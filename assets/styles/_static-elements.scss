@@ -73,6 +73,29 @@ header {
 *****************************/
 
 footer {
-    text-align: center;
     padding: 40px 0;
+    background: $neutral-10;
+    line-height: 40px;
+    font-size: 0.95em;
+    text-transform: lowercase;
+    * { color: $neutral-60; }
+}
+.footer-logo {
+    float: left;
+    height: 40px;
+}
+.footer-logo .logo-letter {
+    fill: $neutral-60;
+}
+.footer-nav {
+    float: left;
+    @extend %clearfix;
+    a {
+        display: block;
+        float: left;
+        padding-left: 50px;
+    }
+}
+.footer-email {
+    float: right;
 }

@@ -32,6 +32,6 @@
 		<?php endforeach ?>
 	</div>
 </main>
-	
+
 <?php snippet('footer') ?>
 <?php snippet('html-footer') ?>

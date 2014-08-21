@@ -29,8 +29,11 @@
                         <div class="service-wrapper">
                             <?php $src = $service->images()->first()->url() ?>
                             <img src="<?= $src ?>" alt="<?= $service->title() ?>" class="section-thumb" itemprop="image">
-                            <h2 itemprop="name"><?= html( $service->title() ) ?></h2>
-                            <p itemprop="description"><?= html( $service->blurb() ) ?></p>
+                            <div class="service-copy">
+                                <h2 itemprop="name"><?= html( $service->title() ) ?></h2>
+                                <p itemprop="description"><?= html( $service->blurb() ) ?></p>
+                            </div>
+                            
                         </div>
                     </li>
                 <?php endforeach ?>

@@ -8,6 +8,7 @@
 	position: relative;
 	max-width: $pagewidth;
 	margin: 0 auto;
+	padding: 0 30px;
 	@extend %clearfix;
 }
 
@@ -90,11 +91,6 @@
 .services {
 	padding: 100px 0;
 	text-align: center;
-	.section-thumb {
-		width: 120px;
-		padding-bottom: 35px;
-		pointer-events: none;
-	}
 	.section-header {
 		padding-bottom: 30px;
 	}
@@ -105,6 +101,11 @@
 		@include button($neutral-90, true);
 		margin-top: 30px;
 	}
+}
+.section-thumb {
+	width: 120px;
+	padding-bottom: 35px;
+	pointer-events: none;
 }
 
 .services-list {
@@ -127,7 +128,10 @@
 }
 .service-wrapper {
 	background: #fff;
-	padding: 60px;
+	padding: 60px 0;
+	p {
+		padding: 0 60px;
+	}
 }
 
 .instagram-block {
