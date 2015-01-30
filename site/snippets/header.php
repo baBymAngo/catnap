@@ -1,4 +1,4 @@
-<header>		
+<header id="header">		
 	<div class="margin-container">		
 	    <a class="logo" href="<?= url('home') ?>"><?php include(__DIR__.'/../../assets/images/catnap.svg') ?></a>
 		<nav class="main-menu">

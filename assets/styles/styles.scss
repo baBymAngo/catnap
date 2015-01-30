@@ -1,8 +1,18 @@
-@import 'reset.css', '_variables.scss', '_typography.scss', '_static-elements.scss';
+@import 'reset.css', '_variables.scss', '_typography.scss';
 
 /***********************
-	 UTILITY CLASSES
+		BASICS
 ************************/
+
+body { background: $body-bg; }
+
+section:not(.hero) {
+    background: $white;
+}
+
+.content-section {
+	padding: 50px 0;
+}
 
 .margin-container {
 	position: relative;
@@ -12,52 +22,113 @@
 	@extend %clearfix;
 }
 
-.hero {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	padding-bottom: 18px;
-}
-.hero-bg {
-	background: $neutral-90;
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-}
-.hero-wrapper {
-	min-height: 495px - 18px;
-	padding-top: 70px;
-}
-.hero-header {
-	color: inherit;
-	margin: 0;
-}
-.hero-copy {
-	max-width: 450px;
-	color: $neutral-30;
-	margin: 2em 0;
-}
-.hero-link-block a {
-	@include button();
-	margin-right: 1.5em;
-}
-.hero-image {
-	position: absolute;
-	bottom: -18px;
-	left: 540px;
-	z-index: 5;
-	pointer-events: none;
+/***********************
+        HEADER
+************************/
+
+#header {
+	background: $body-bg;
+    padding: 15px 0;
+    border-bottom: 1px solid $neutral-100;
+    @extend %clearfix;
 }
 
-.hero.no-image {
+.logo {
+    float: left;
+    height: 34px;
+    position: relative;
+    top: 1px;
+    svg { overflow: visible; }
+    &:hover .logo-letter {
+        animation: rainbow 0.3s steps(1) infinite; 
+    }
+}
+
+#logo-c { animation-delay: 0s }
+#logo-a1 { animation-delay: 0.05s }
+#logo-t { animation-delay: 0.1s }
+#logo-n { animation-delay: 0.15s }
+#logo-a2 { animation-delay: 0.2s }
+#logo-p { animation-delay: 0.25s }
+
+@keyframes wave {
+    1% { transform: translateY(0); }
+    15% { transform: translateY(8px); }
+    55% { transform: translateY(-16px); }
+    60% { transform: translateY(-16px); }
+    80% { transform: translateY(8px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes rainbow {
+    0% { fill: $red; }
+    16% { fill: $orange; }
+    33% { fill: $yellow; }
+    50% { fill: $green; }
+    66% { fill: $blue; }
+    83% { fill: $purple; }
+}
+
+.main-menu {
+    float: right;
+    a {
+        margin-left: 1.5em;
+        height: 34px;
+        line-height: 34px;
+        border-radius: 4px;
+        color: $neutral-50;
+        float: left;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        transition: color 0.2s ease;
+        &:hover {
+            color: $white;
+            //background: $neutral-100;
+        } 
+    }
+}
+
+/***********************
+	   HERO BANNER
+************************/
+
+.hero {
+	background-color: $body-bg;
 	text-align: center;
-	.hero-wrapper {
-		min-height: 0;
-		padding-bottom: 70px;
+	color: white;
+	padding-bottom: 10px;
+	p {
+		max-width: 600px;
+		color: $neutral-40;
+		margin: 20px auto 50px;
+		a {
+			color: $neutral-40;
+			text-decoration: underline;
+		}
 	}
-	.hero-copy {
-		max-width: 700px;
-		display: inline-block;
-	}
+}
+
+#home .hero {
+	background-image: url(../images/stars.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	box-shadow: inset 0 -20px 0 $white;
+	padding-bottom: 0;
+}
+
+.hero-header {
+	color: inherit;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-image {
+	position: relative;
+	z-index: 5;
+	pointer-events: none;
 }
 
 
@@ -89,49 +160,58 @@
 
 // Services
 .services {
-	padding: 100px 0;
+	padding: 80px 0;
 	text-align: center;
 	.section-header {
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 	}
 	.section-subheader {
 		margin: 0 auto;
 	}
-	a {
-		@include button($neutral-90, true);
-		margin-top: 30px;
-	}
 }
+
 .section-thumb {
 	width: 120px;
-	padding-bottom: 35px;
 	pointer-events: none;
 }
 
 .services-list {
-	margin-top: 60px;
-	background: radial-gradient(center, ellipse closest-side, $neutral-30 0%, $body-bg 100%);
+	margin-top: 50px;
+	background: radial-gradient(center, ellipse closest-side, $neutral-30 50%, $white 100%);
 	@extend %clearfix;
 }
+
 .service {
 	float: left;
 	width: 33.3333%;
 	text-align: center;
 	vertical-align: top;
 	padding-right: 1px;
-	padding-bottom: 1px;
-	&:nth-child(3n+3) { padding-right: 0; }
-	&:nth-last-child(-n+3) { padding-bottom: 0; } // Last row
-	h2 {
-		padding-bottom: 20px;
-	}
+	padding-top: 1px;
 }
+
 .service-wrapper {
 	background: #fff;
-	padding: 60px 0;
-	p {
-		padding: 0 60px;
-	}
+	padding: 4px;
+	display: block;
+	color: $txt;
+}
+
+.service-link {
+	display: block;
+	padding: 30px 0;
+	border-radius: 2px;
+	transition: background 0.2s;
+	&:hover { background: $neutral-10; }
+}
+
+.service-name {
+	margin-top: 25px;
+}
+
+.service-description {
+	display: none;
+	margin: 0 25px;
 }
 
 .instagram-block {
@@ -141,7 +221,7 @@
 	#instagram {
 		position: relative;
 		width: 100%;
-		background: $neutral-0;
+		background: $white;
 		@extend %clearfix;
 	}
 	.shot {
@@ -160,16 +240,30 @@
 	    PROJECTS
 *************************/
 
+.projects { @extend %clearfix; }
+
 .project-block {
-	padding: 100px 0;
+	margin-bottom: 50px;
 	position: relative;
 	@extend %clearfix;
 }
-.project-content {
-	width: 500px;
-}
+
 .project-thumb {
-	float: right;
+	margin-bottom: 30px;
+}
+
+/****************************
+          FOOTER
+*****************************/
+
+#footer {
+	background: $neutral-10;
+	padding: 15px 0;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 0.95em;
+    @extend %clearfix;
 }
 
 @import '_media-queries.scss';

@@ -1,0 +1,5 @@
+Title: Design
+----
+Subtitle: Beyond how it looks: how it works and makes you feel.
+----
+Text: We strive for simplicity, but not at the expense of character. Simplicity lends clarity and user-friendliness, while character gives you a voice that can stand out from the crowd. 

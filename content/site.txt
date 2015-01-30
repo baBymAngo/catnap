@@ -2,18 +2,18 @@
 ----
 Author: Kyle Decker, Liam Scott
 ----
-Description: We are Catnap: a creative team of two, excited to showcase great ideas via the web. We believe in honest design, elegant code, and candid speech. In cultivating what matters and ditching the rest.
+Description: We work with small businesses and rad individuals to make websites that are worth sharing. 
 ----
 Keywords: design, development, small business, innovation
 ----
-Address: 20 Amber Drive
+Address: 703 Mayflower Drive
 ----
-City: Horse Shoe
+City: Greensboro
 ----
 State: NC
 ----
-Postcode: 28742
+Postcode: 27403
 ----
 Country: US
 ----
-Copyright: © 2014
+Copyright: All content © 2015

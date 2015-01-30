@@ -1,0 +1,140 @@
+/* -------------------------------------------------------------- 
+  
+   Reset default browser CSS.
+   
+   Based on work by Eric Meyer:
+   http://meyerweb.com/eric/tools/css/reset/index.html
+   
+-------------------------------------------------------------- */
+
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a img { border: none; }
+
+
+/* Coming Soon Styles
+-------------------------------------------------------------- */
+
+html {
+	-webkit-font-smoothing: antialiased; // Fix fatty fonts
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background: linear-gradient(to bottom, #1f1e34 50%,#292848 100%) fixed;
+	font-family: 'Lato', Helvetica, Arial, Verdana, sans-serif;
+	color: #9CA1C4;
+	font-size: 21px;
+	font-weight: 400;
+}
+
+a { color: #9CA1C4; }
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 640px;
+	padding: 3em;
+	text-align: center;
+}
+
+img { max-width: 100%; }
+
+h1 {
+	color: #fff;
+	font-size: 3em;
+	font-weight: 300;
+	letter-spacing: -1px;
+	margin: .5em 0;
+}
+
+.sorry {
+	font-weight: 400;
+	line-height: 1.5;
+	animation-delay: 1s;
+}
+
+/* Animations */
+
+.animated {
+	animation-fill-mode: both;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeInDown {
+	animation-name: fadeInDown;
+}
+
+@media all and (max-width: 700px) {
+	body { font-size: 20px; }
+}
+
+@media all and (max-width: 650px) {
+	body { font-size: 19px; }
+}
+
+@media all and (max-width: 600px) {
+	body { font-size: 18px; }
+	h1 { font-size: 2.6em; }
+}
+
+@media all and (max-width: 500px) {
+	body { font-size: 17px; }
+	.wrapper { padding: 2em; }
+}
+
+@media all and (max-width: 420px) {
+	body { font-size: 16px; }
+	.wrapper { padding: 1em; }
+}

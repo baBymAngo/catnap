@@ -7,8 +7,8 @@
 	$('#typed-txt').typed({
 		strings: arr,
 		typeSpeed: 100, 
-        backDelay: 2000, 
-        loop: true
+        backDelay: 1000, 
+        loop: false
 	});
 
 	// Instagram Feed

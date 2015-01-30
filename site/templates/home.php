@@ -1,48 +1,49 @@
 <?php snippet('html-header') ?>
 
-<main class="wrapper">
-	<div class="hero">
-        <div class="hero-bg">
-    		<?php snippet('header') ?>
-            <div class="hero-wrapper margin-container">
-                <meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
-                <h1 class="hero-header">Websites with <span id="typed-txt"></span><span id="typed-cursor"></span></h1>
-                <p class="hero-copy"><?= $site->description() ?></p>
-                <div class="hero-link-block">
-                    <a href="<?= url('works') ?>">See our work</a>
-                    <a href="<?= url('about') ?>">Meet the team</a>
-                </div>
-                <img src="<?= $page->images()->find('macbook.png')->url() ?>" alt="" class="hero-image">
-            </div>
-        </div>
-	</div>
+<main id="home" class="content">
 
-	<section class="services">
+	<section class="hero">
+		<?php snippet('header') ?>
+        <div class="hero-wrapper margin-container">
+            <meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
+            <h1 class="hero-header">Websites with spirit.</h1>
+            <?= kirbytext( $site->description() ) ?>
+            <img src="<?= $page->images()->find('macbook.png')->url() ?>" alt="" class="hero-image">
+        </div>
+	</section>
+
+	<section class="content-section services">
         <div class="margin-container">
-            <?php $services = $pages->find('home/services-1') ?>
-            <h1 class="section-header"><?= $services->header() ?></h1>
-            <p class="section-subheader"><?= html( $services->subheader() ) ?></p>
+            <?php $services_page = $site->find('services') ?>
+            <h2 class="section-header"><?= $services_page->homepage_header() ?></h2>
+            <p class="section-subheader"><?= html( $services_page->homepage_subheader() ) ?></p>
             <ul class="services-list">
-                <?php $services = $services->children()  ?>
+                <?php $services = $services_page->children()  ?>
                 <?php foreach( $services as $service ): ?>
                     <li class="service" itemscope itemtype="https://schema.org/Service">
                         <div class="service-wrapper">
-                            <?php $src = $service->images()->first()->url() ?>
-                            <img src="<?= $src ?>" alt="<?= $service->title() ?>" class="section-thumb" itemprop="image">
-                            <div class="service-copy">
-                                <h2 itemprop="name"><?= html( $service->title() ) ?></h2>
-                                <p itemprop="description"><?= html( $service->blurb() ) ?></p>
-                            </div>
-                            
+                            <a href="<?= $services_page->url() ?>#<?= $service->slug() ?>" class="service-link">
+                                <?php $src = $service->images()->first()->url() ?>
+                                <img src="<?= $src ?>" alt="<?= $service->title() ?>" class="section-thumb" itemprop="image">
+                                <div class="service-copy">
+                                    <h3 class="service-name" itemprop="name"><?= html( $service->title() ) ?></h3>
+                                    <p class="service-description" itemprop="description"><?= html( $service->blurb() ) ?></p>
+                                </div>
+                            </a>
                         </div>
                     </li>
                 <?php endforeach ?>
             </ul>
-            <a href="<?= url('about') ?>">Learn more about us</a>
         </div>
     </section>
 
-    <section class="instagram-block">
+    <section class="content-section services">
+        <div class="margin-container">
+            <?= kirbytext( $page->text() ) ?>
+        </div>
+    </section>
+
+    <section class="content-section instagram-block">
         <div class="instagram-wrapper">
             <div id="instagram"></div>
         </div>  
@@ -51,7 +52,6 @@
 
 <script src="assets/js/vendors/typed.js"></script>
 <script src="assets/js/vendors/instafeed.min.js"></script>
-<script src="assets/js/home.js"></script>
 
 <?php snippet('footer') ?>
 <?php snippet('html-footer') ?>

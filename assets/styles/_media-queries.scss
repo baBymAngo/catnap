@@ -1,82 +1,11 @@
-@media screen and (max-width: $breakpoint-full){
-	body {
-		font-size: 18px;
-	}
-	.hero-wrapper {
-		padding-top: 30px;
-	}
-	.hero {
-		text-align: center;
-	}
-	.hero-copy {
-		display: inline-block;
-	}
-	.hero-link-block {
-		padding-bottom: 30px;
-	}
-	.hero-image {
-		position: relative;
-		left: auto;
-	}
-	
-}
-
-@media screen and (max-width: 900px){
-	.services-list {
-		margin-top: 30px;
-	}
-	.service {
-		width: 50%;
-	    &:nth-child(3n+3) { padding-right: 1px; }
-		&:nth-last-child(-n+3) { padding-bottom: 1px; }
-	}	
-}
-
 @media screen and (max-width: $breakpoint-large){
-	body {
-		font-size: 17px;
-	}
-}
-
-@media screen and (max-width: 660px){
-	.service-wrapper {
-		padding: 40px 0;
-		p {
-			padding: 0 40px;
-		}
-	}
+	body { font-size: 18px; }
 }
 
 @media screen and (max-width: $breakpoint-medium){
-	body {
-		font-size: 16px;
-	}
-	.services-list {
-		max-width: 400px;
-		margin: 0 auto;
-		background: transparent;
-	}
-	.service {
-		width: 100%;
-		text-align: left;
-		padding: 0;
-	}
-	.section-thumb {
-		float: left;
-		padding: 0;
-		width: 80px;
-	}
-	.service-copy {
-		padding-left: 30px;
-		overflow: hidden;
-		p {
-			padding: 0;
-		}
-	}
+	body { font-size: 17px; }
 }
 
 @media screen and (max-width: $breakpoint-small){
-	body {
-		font-size: 15px;
-	}
+	body { font-size: 16px; }
 }

@@ -1,0 +1,7 @@
+Title: Contact
+----
+Hero Header: Say hello.
+----
+Hero Subheader: Our cat might bite, but we won't. He just nibbles anyways, it doesn't hurt. Just a little nip on your hand. (It means he loves you.)
+----
+Text: Don’t like web forms? Email us at bonjour@catnap.co from your favorite app—we’ll receive your message all the same.

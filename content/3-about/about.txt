@@ -1,0 +1,21 @@
+Title: About
+----
+Hero Header: Small yet mighty.
+----
+Hero Subheader: We're a plucky gang of three: two lanky nerds and a bumbling yellow cat. But don't let appearances fool you, because we have something the other guys don't: the power of true love
+----
+Text:
+## The catnap trio.
+
+Kyle
+kyledecker.me
+
+Liam
+liamscott.me
+
+Sam
+catnap.co
+
+- write individual bios like radio announcer?
+
+We don't waste your time on directionless focus groups or ineffective management. We simply take your ideas and we create.

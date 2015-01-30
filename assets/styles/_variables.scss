@@ -1,12 +1,14 @@
 /* Colors */ 
-$red:			#FD6D69;
-$orange:		#FF9F6D;
-$yellow: 		#FFD573;
-$green:			#B5E0A6;
-$blue:			#97D7F4;
-$purple:		#9E8FE7;
+$red:			#FF1F4B;
+$orange:		#FF7733;
+$yellow: 		#FFC533;
+$green:			#69D84B;
+$blue:			#44C5FF;
+$purple:		#7053FF;
+$black:			#222237;
+$white:			#FFFFFF;
 
-$neutral-100:	#2D2C45; // Darkest
+$neutral-100:	#2D2C45;
 $neutral-90:	#3C3C5A;
 $neutral-80:	#4C4D6C;
 $neutral-70:	#5F6185;
@@ -16,23 +18,17 @@ $neutral-40:	#B8BEDB;
 $neutral-30:	#D8DDF0;
 $neutral-20:	#E6EAF5;
 $neutral-10:	#F2F4FA;
-$neutral-0:		#FFFFFF; // Lightest
 
 /* Site Colors */
-$body-bg : $neutral-0;
+$body-bg : $black;
 $txt     : $neutral-70;
 $header  : $neutral-80;
 
-$pagewidth: 1160px;
-$headerheight: 70px;
+$pagewidth: 760px;
 
-/* Breakpoints */
-$breakpoint-full: 1000px;
-$breakpoint-large: 800px;
-$breakpoint-medium: 600px;
-$breakpoint-small: 410px;
-
-
+$breakpoint-large: 540px;
+$breakpoint-medium: 430px;
+$breakpoint-small: 320px;
 
 /* Silents */
 %clearfix {
@@ -61,7 +57,7 @@ $breakpoint-small: 410px;
 }
 
 /* Mixins */
-@mixin button($background: $neutral-80, $has-arrow: false) {
+@mixin button($background: $yellow, $has-arrow: false) {
 	display: inline-block;
 	background-color: $background;
 	color: white;

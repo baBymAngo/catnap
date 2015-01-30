@@ -1,0 +1,9 @@
+Title: Services
+----
+Hero Header: What we do. 
+----
+Hero Subheader: This page is about all the things we do and what we think about doing them.
+----
+Homepage Header: Here's what we do.
+----
+Homepage Subheader: Getting a website created can be scary, but we'll walk you through the steps. We've worked with all types of clients—schools, non-profits, artists, even city governments. [One concluding sentence]

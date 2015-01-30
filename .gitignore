@@ -1,10 +1,5 @@
 .DS_Store
-panel/
-site/panel
-docs
-site/config/
-site/config/config.php
 assets/styles/.sass-cache
-assets/styles/styles.css
 *.codekit
 config.codekit
+*.png
