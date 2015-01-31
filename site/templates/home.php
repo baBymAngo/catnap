@@ -24,11 +24,8 @@
                         <div class="service-wrapper">
                             <a href="<?= $services_page->url() ?>#<?= $service->slug() ?>" class="service-link">
                                 <?php $src = $service->images()->first()->url() ?>
-                                <img src="<?= $src ?>" alt="<?= $service->title() ?>" class="section-thumb" itemprop="image">
-                                <div class="service-copy">
-                                    <h3 class="service-name" itemprop="name"><?= html( $service->title() ) ?></h3>
-                                    <p class="service-description" itemprop="description"><?= html( $service->blurb() ) ?></p>
-                                </div>
+                                <img src="<?= $src ?>" alt="<?= $service->title() ?>" class="service-image" itemprop="image">
+                                <h3 class="service-name" itemprop="name"><?= html( $service->title() ) ?></h3>
                             </a>
                         </div>
                     </li>
@@ -37,9 +34,11 @@
         </div>
     </section>
 
-    <section class="content-section services">
+    <section class="content-section stand-out">
         <div class="margin-container">
             <?= kirbytext( $page->text() ) ?>
+            <img src="<?= $page->image('stand-out.png')->url() ?>" alt=""> 
+            
         </div>
     </section>
 

@@ -1,6 +1,6 @@
 <?php snippet('html-header') ?>
 
-<main class="content">
+<main id="services" class="content">
 
 	<?php snippet('hero') ?>
 
@@ -10,11 +10,11 @@
 			
 			<?php $services = $page->children() ?>
 			<?php foreach( $services as $service ): ?>
-				<div id="<?= $service->slug() ?>">
-					<img src="<?= $service->images()->first()->url() ?>" alt="<?= $service->title() ?>" class="section-thumb" itemprop="image">
-	            	<h2 class="section-header"><?= html( $service->title() ) ?></h2>
-	            	<p class="section-subheader"><?= html( $service->subtitle() ) ?></p>
-	            	<p><?= kirbytext( $service->text() ) ?></p>
+				<div class="service" id="<?= $service->slug() ?>">
+					<img src="<?= $service->images()->first()->url() ?>" alt="<?= $service->title() ?>" class="service-image" itemprop="image">
+	            	<h2 class="service-name" itemprop="name"><?= html( $service->title() ) ?></h2>
+	            	<p class="service-subtitle"><?= html( $service->subtitle() ) ?></p>
+	            	<p class="service-text"><?= $service->text() ?></p>
 	            </div>
             <?php endforeach ?>
 

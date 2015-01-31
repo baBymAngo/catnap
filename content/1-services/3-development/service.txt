@@ -2,4 +2,4 @@ Title: Development
 ----
 Subtitle: Elegant code that adapts to every gadget and gizmo.
 ----
-Text: To us, what's under the hood is just as important as what you can see. We write efficient code for search-friendliness and effortless updates. We’ve spent long enough on the web to know: there’s a lot that can go wrong. The details are what make or break an experience.
+Text: To us, what's under the hood is just as important as what you can see. We write efficient code for search-friendliness and effortless updates.
