@@ -1,6 +1,6 @@
 <?php snippet('html-header') ?>
 
-<main id="about" class="content">
+<main id="about main" class="content">
 
     <?php snippet('hero') ?>
 
