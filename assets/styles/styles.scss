@@ -8,6 +8,20 @@
 
 body { background: $body-bg; }
 
+.btn {
+	display: block;
+	background: $purple;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 40px auto 0;
+	&:hover {
+		cursor: pointer;
+		background: $purple - 10;
+	}
+}
+
 section:not(.hero) {
     background: $white;
 }
@@ -73,6 +87,7 @@ section:not(.hero) {
         float: left;
         font-weight: 600;
         text-transform: uppercase;
+        text-decoration: none;
         font-size: 0.8em;
         letter-spacing: 2px;
         transition: color 0.2s ease;
@@ -87,19 +102,17 @@ section:not(.hero) {
 	   HERO BANNER
 ************************/
 
-#hero {
+.hero {
 	background-color: $body-bg;
+	background-image: url(../images/stars.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
 	text-align: center;
 	color: white;
-	padding-bottom: 10px;
 	p {
 		max-width: 600px;
 		color: $neutral-40;
 		margin: 20px auto 50px;
-		a {
-			color: $neutral-40;
-			text-decoration: underline;
-		}
 	}
 }
 
@@ -116,13 +129,7 @@ section:not(.hero) {
 	pointer-events: none;
 }
 
-#home #hero {
-	background-image: url(../images/stars.svg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	box-shadow: inset 0 -20px 0 $white;
-	padding-bottom: 0;
-}
+#home .hero { box-shadow: inset 0 -20px 0 $white; }
 
 /***********************
 	     HOME
@@ -151,15 +158,9 @@ section:not(.hero) {
 }
 
 // Services
-.services {
+.content-section--services {
 	padding: 80px 0;
 	text-align: center;
-	.section-header {
-		padding-bottom: 20px;
-	}
-	.section-subheader {
-		margin: 0 auto;
-	}
 }
 
 .services-list {
@@ -183,6 +184,7 @@ section:not(.hero) {
 	color: $txt;
 }
 .service-link {
+	text-decoration: none;
 	display: block;
 	padding: 30px 0;
 	border-radius: 2px;
@@ -248,6 +250,40 @@ section:not(.hero) {
 .project-thumb {
 	margin-bottom: 30px;
 }
+
+/***********************
+	    CONTACT
+***********************/
+
+input[type="text"], input[type="email"], textarea {
+	display: block;
+	background: $neutral-10;
+	border: 1px solid $neutral-30;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	&:active, &:focus {
+		border-color: $purple;
+		box-shadow: 0 0 0 2px $purple;
+	}
+}
+
+button[type="submit"] {
+	@extend .btn;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.contact-form--firstname, .contact-form--lastname, .contact-form--email {
+	width: 32%;
+	float: left;
+}
+
+.contact-form--lastname { margin-right: 2%; margin-left: 2%; }
+
+.contact-form--message { width: 100%; min-height: 280px; }
 
 /****************************
           FOOTER

@@ -18,8 +18,8 @@ if ( $_SERVER["REQUEST_METHOD"] == "POST" ) {
 	}
 
 	// Send emails
-	$email = mail( 'bonjour@catnap.co', 'Message for Catnap', $message, "From: $address");
-	$confirmation = mail( $address, 'Confirmation Message', "Thank you for your message, $firstName! We\'re so psyched to hear from you. We will respond just as soon as we can." , 'From: bonjour@catnap.co' );
+	$email = mail( 'bonjour@catnap.co', "A message from $firstName $lastName", $message, "From: $address");
+	$confirmation = mail( $address, 'We got your note', "Hey $firstName,\n\nWe\'ve received your message and will respond within 48 hours, although we usually reply much sooner than that. If for some reason you don't hear from us, send another email to bonjour@catnap.co and we'll get back to you as soon as possible.\n\nThanks,\n\nKyle & Liam\nTeam Catnap\ncatnap.co" , 'From: bonjour@catnap.co' );
 
 	if ( $email && $confirmation ) {
 		echo "success";

@@ -3,10 +3,10 @@
     
         $(this).serialize();
 
-        var firstName = $('input.first-name').val(),
-            lastName = $('input.last-name').val(),
-            address = $('input.email').val(),
-            message = $('textarea.message').val();
+        var firstName = $('input.contact-form--firstname').val(),
+            lastName = $('input.contact-form--lastname').val(),
+            address = $('input.contact-form--email').val(),
+            message = $('textarea.contact-form--message').val();
 
         $.ajax({
             url: $('#contact-form').attr('action'),
@@ -26,7 +26,7 @@
                         swal(":(", "Computer is having a bad day. We can't send your message right now, but if you email bonjour@catnap.co with another application, that will probably work. Sorry about that!", "error");
                         break;
                     default:
-                        swal("???", "??????");
+                        swal("Unknown Error", "A wild Missingno attacked! We don't really know what's going on right now, so it's probably best to just send us an email with the link at the top.");
                         break;
                 }
             },
@@ -37,10 +37,10 @@
        });
         
         function clear(){
-            $('input.first-name').val("");
-            $('input.last-name').val("");
-            $('input.email').val("");
-            $('textarea.message').val("");
+            $('input.contact-form--firstname').val("");
+            $('input.contact-form--lastname').val("");
+            $('input.contact-form--email').val("");
+            $('textarea.contact-form--message').val("");
         }
 
         return false;

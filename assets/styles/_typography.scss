@@ -1,4 +1,4 @@
-body {
+body, input, textarea, button {
     font: 400 19px/1.4 'proxima-nova', sans-serif;
     color: $txt;
     -webkit-font-smoothing: antialiased;
@@ -22,6 +22,27 @@ h2 { font-size: 2.4em; }
 h3 {
     font-size: 1.4em;
     font-weight: 400;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+   color: $neutral-50;
+}
+
+:-moz-placeholder { // Firefox 18-
+   color: $neutral-50;  
+}
+
+::-moz-placeholder {  // Firefox 19+
+   color: $neutral-50;  
+}
+
+:-ms-input-placeholder {  
+   color: $neutral-50;  
 }
 
 ::selection {
