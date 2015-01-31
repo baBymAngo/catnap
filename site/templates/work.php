@@ -1,9 +1,7 @@
-<!-- Template: Works -->
 <?php snippet('html-header') ?>
+<?php snippet('hero') ?>
 
-<main id="work main" class="content">
-
-	<?php snippet('hero') ?>
+<main id="main" class="content">
 
 	<section class="content-section projects">
 		<div class="margin-container">

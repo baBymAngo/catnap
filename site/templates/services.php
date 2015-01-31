@@ -1,12 +1,7 @@
 <?php snippet('html-header') ?>
+<?php snippet('hero') ?>
 
-<<<<<<< HEAD
-<main id="services" class="content">
-=======
-<main class="content" id="main">
->>>>>>> FETCH_HEAD
-
-	<?php snippet('hero') ?>
+<main id="main" class="content">
 
 	<section class="content-section">
         <div class="margin-container">

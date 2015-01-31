@@ -1,8 +1,7 @@
 <?php snippet('html-header') ?>
+<?php snippet('hero') ?>
 
-<main class="content" id="main">
-
-	<?php snippet('hero') ?>
+<main id="main" class="content">
 
 	<section class="content-section">
         <div class="margin-container">

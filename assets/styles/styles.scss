@@ -87,7 +87,7 @@ section:not(.hero) {
 	   HERO BANNER
 ************************/
 
-.hero {
+#hero {
 	background-color: $body-bg;
 	text-align: center;
 	color: white;
@@ -116,7 +116,7 @@ section:not(.hero) {
 	pointer-events: none;
 }
 
-#home .hero {
+#home #hero {
 	background-image: url(../images/stars.svg);
 	background-repeat: no-repeat;
 	background-position: center top;

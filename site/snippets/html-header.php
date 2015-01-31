@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <?php if($page->isHomepage()): ?>
-    <title><?php echo html($site->title()) ?></title>
+    <title><?= html($site->title()) ?></title>
   <?php else: ?>
-    <title><?php echo html($page->title()) ?></title>
+    <title><?= html($page->title()) ?></title>
   <?php endif ?>
   <meta name="description" content="<?php echo html($site->description()) ?>" />
   <meta name="keywords" content="<?php echo html($site->keywords()) ?>" /> 
@@ -23,4 +23,4 @@
   <script>try{Typekit.load();}catch(e){}</script>
 </head>
 
-<body>
+<body id="<?= html($page->slug()) ?>">
