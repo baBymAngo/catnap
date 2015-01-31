@@ -1,6 +1,6 @@
 <?php snippet('html-header') ?>
 
-<main id="home" class="content">
+<main id="home main" class="content">
 
 	<section class="hero">
 		<?php snippet('header') ?>

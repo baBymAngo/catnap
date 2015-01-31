@@ -1,6 +1,10 @@
 <?php snippet('html-header') ?>
 
+<<<<<<< HEAD
 <main id="services" class="content">
+=======
+<main class="content" id="main">
+>>>>>>> FETCH_HEAD
 
 	<?php snippet('hero') ?>
 

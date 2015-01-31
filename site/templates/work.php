@@ -1,7 +1,7 @@
 <!-- Template: Works -->
 <?php snippet('html-header') ?>
 
-<main id="work" class="content">
+<main id="work main" class="content">
 
 	<?php snippet('hero') ?>
 
