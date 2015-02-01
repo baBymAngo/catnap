@@ -30,6 +30,9 @@ img { border-radius: 3px; }
 .section-header {
 	margin: $spacing*4 0;
 	text-align: center;
+	.btn {
+		margin-top: $spacing*2;
+	}
 }
 
 /***********************
@@ -308,6 +311,8 @@ img { border-radius: 3px; }
 
 .project-logos {
 	margin: -$spacing;
+	margin-bottom: $spacing*3;
+	@extend %clearfix;
 }
 
 .project-logo {

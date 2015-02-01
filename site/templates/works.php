@@ -73,5 +73,15 @@
 	</div>
 </section>
 
+<section class="content-section content-section--light">
+	<div class="margin-container">
+		<div class="section-header">
+			<h2><?= $page->CTA_header() ?></h2>			
+			<?= kirbytext( $page->CTA_text() ) ?>
+			<a class="btn" href="contact"><?= $page->CTA_button() ?></a>
+		</div>
+	</div>
+</section>
+
 <?php snippet('footer') ?>
 <?php snippet('html-footer') ?>
