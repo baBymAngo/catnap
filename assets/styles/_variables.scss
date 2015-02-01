@@ -26,6 +26,8 @@ $header  : $neutral-80;
 
 $pagewidth: 760px;
 
+$spacing: 15px;
+
 $breakpoint-large: 540px;
 $breakpoint-medium: 430px;
 $breakpoint-small: 320px;
@@ -59,7 +61,7 @@ $breakpoint-small: 320px;
 		&:hover { background: $neutral-30; }
 	}
 	&.btn-tiny {
-		font-size: 0.6em;
+		font-size: 0.65em;
 		letter-spacing: 1px;
 		margin: 0;
 		text-transform: uppercase;

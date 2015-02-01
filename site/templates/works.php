@@ -11,12 +11,19 @@
 		<?php $websites = $websites->children() ?>
 		<?php foreach( $websites as $website ) : ?>
 			<div class="project-website">
-				<?php if($website->link()): ?>
-					<a href="<?= $website->link() ?>">
-						<img src="http://placehold.it/700x400" alt="Project Thumbnail" class="project-thumb">
-					</a>
-				<?php else: ?>
-					<img src="http://placehold.it/700x400" alt="Project Thumbnail" class="project-thumb">
+				<?php $image = $website->images()->find('screenshot.png') ?>
+				<?php if($image): ?>
+					<div class="project-website--browser">
+						<div class="toolbar">
+							<div class="traffic-lights">
+								<div class="traffic-light red"></div>
+								<div class="traffic-light yellow"></div>
+								<div class="traffic-light green"></div>
+							</div>
+							<div class="address-bar"></div>
+						</div>
+						<img src="<?= $image->url() ?>" alt="<?= html( $website->title() )?>" class="project-website--thumb">
+					</div>
 				<?php endif ?>
 				<div class="project-content">
 					<div class="project-title">

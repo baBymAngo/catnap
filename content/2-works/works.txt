@@ -1,4 +1,4 @@
-Title: Work
+Title: Works
 ----
 Hero Header: Things we've made.
 ----
