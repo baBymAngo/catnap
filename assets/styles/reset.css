@@ -55,6 +55,8 @@ table {
 }
 textarea, input { outline: none; }
 
+button::-moz-focus-inner { border: 0; }
+
 *, *:before, *:after {
 	-moz-box-sizing: border-box; 
 	-webkit-box-sizing: border-box; 

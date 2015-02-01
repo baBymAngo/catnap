@@ -13,8 +13,10 @@
 <section class="content-section content-section--services">
 	<div class="margin-container">
 		<?php $services_page = $site->find('services') ?>
-		<h2 class="section-header"><?= $services_page->homepage_header() ?></h2>
-		<p class="section-subheader"><?= html( $services_page->homepage_subheader() ) ?></p>
+		<div class="section-header">
+			<h2><?= $services_page->homepage_header() ?></h2>
+			<?= kirbytext( $services_page->homepage_subheader() ) ?>
+		</div>
 		<ul class="services-list">
 			<?php $services = $services_page->children()  ?>
 			<?php foreach( $services as $service ): ?>
@@ -32,22 +34,14 @@
 	</div>
 </section>
 
-<section class="content-section stand-out">
+<section class="content-section content-section--light stand-out">
 	<div class="margin-container">
-		<?= kirbytext( $page->text() ) ?>
+		<div class="section-header">
+			<?= kirbytext( $page->text() ) ?>
+		</div>
 		<img src="<?= $page->image('stand-out.png')->url() ?>" alt=""> 
-		
 	</div>
 </section>
-
-<section class="content-section instagram-block">
-	<div class="instagram-wrapper">
-		<div id="instagram"></div>
-	</div>  
-</section>
-
-<script src="assets/js/vendors/typed.js"></script>
-<script src="assets/js/vendors/instafeed.min.js"></script>
 
 <?php snippet('footer') ?>
 <?php snippet('html-footer') ?>

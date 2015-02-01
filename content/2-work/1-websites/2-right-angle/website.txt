@@ -1,0 +1,13 @@
+Title: Right Angle Woodworks
+
+----
+
+Text: Right Angle Woodworks is a portfolio site to showcase the works of John Decker, an Asheville-based craftsman. Built on WordPress.
+
+----
+
+Link: http://rightanglewoodworks.com
+
+----
+
+Tags: 

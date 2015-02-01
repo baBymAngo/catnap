@@ -24,4 +24,5 @@
 </head>
 
 <body id="<?= html($page->slug()) ?>">
+	<div class="elastic-color"></div>
 	<main id="main">

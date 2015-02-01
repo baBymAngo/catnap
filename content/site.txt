@@ -2,7 +2,7 @@
 ----
 Author: Kyle Decker, Liam Scott
 ----
-Description: We work with small businesses and rad individuals to make websites that are worth sharing. 
+Description: We work with small businesses and rad individuals to make things that are worth sharing. 
 ----
 Keywords: design, development, small business, innovation
 ----
@@ -16,4 +16,4 @@ Postcode: 27403
 ----
 Country: US
 ----
-Copyright: All content © 2015
+Copyright: Copyright © (date: Year) (link: home text: Catnap Creative). We work hard, please don't steal.

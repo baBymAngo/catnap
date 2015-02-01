@@ -1,33 +1,24 @@
-@import 'reset.css', '_variables.scss', '_typography.scss';
-
-@import 'sweet-alert.css';
+@import 'reset.css', '_variables', '_typography', '_sweet-alert';
 
 /***********************
 		BASICS
 ************************/
 
+// When creating margins/padding for things, use multiples of 15 (15, 30, 45, 60)
+
 body { background: $body-bg; }
 
-.btn {
-	display: block;
-	background: $purple;
-	border: none;
-	color: #fff;
-	padding: 10px 20px;
-	border-radius: 5px;
-	margin: 40px auto 0;
-	&:hover {
-		cursor: pointer;
-		background: $purple - 10;
-	}
-}
-
-section:not(.hero) {
-    background: $white;
-}
+img { border-radius: 3px; }
 
 .content-section {
-	padding: 50px 0;
+	background: $white;
+	@extend %clearfix;
+}
+
+.content-section--light {
+	background: $neutral-10;
+	border-top: 1px solid $neutral-20;
+	& + .content-section { border-top: 1px solid $neutral-20; }
 }
 
 .margin-container {
@@ -38,12 +29,17 @@ section:not(.hero) {
 	@extend %clearfix;
 }
 
+.section-header {
+	margin: 60px 0;
+	text-align: center;
+}
+
 /***********************
         HEADER
 ************************/
 
 #header {
-	background: $body-bg;
+	background: $black;
     padding: 15px 0;
     border-bottom: 1px solid $neutral-100;
     @extend %clearfix;
@@ -83,7 +79,7 @@ section:not(.hero) {
         height: 34px;
         line-height: 34px;
         border-radius: 4px;
-        color: $neutral-50;
+        color: $neutral-60;
         float: left;
         font-weight: 600;
         text-transform: uppercase;
@@ -91,7 +87,7 @@ section:not(.hero) {
         font-size: 0.8em;
         letter-spacing: 2px;
         transition: color 0.2s ease;
-        &:hover {
+        &:hover, &.active {
             color: $white;
             //background: $neutral-100;
         } 
@@ -103,7 +99,7 @@ section:not(.hero) {
 ************************/
 
 .hero {
-	background-color: $body-bg;
+	background-color: $black;
 	background-image: url(../images/stars.svg);
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -111,14 +107,14 @@ section:not(.hero) {
 	color: white;
 	p {
 		max-width: 600px;
-		color: $neutral-40;
-		margin: 20px auto 50px;
+		color: $neutral-50;
+		margin: 15px auto 60px;
 	}
 }
 
 .hero-header {
 	color: inherit;
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -157,14 +153,8 @@ section:not(.hero) {
     100% { opacity: 0; }
 }
 
-// Services
-.content-section--services {
-	padding: 80px 0;
-	text-align: center;
-}
-
 .services-list {
-	margin-top: 50px;
+	margin-bottom: 60px;
 	background: radial-gradient(center, ellipse closest-side, $neutral-30 50%, $white 100%);
 	@extend %clearfix;
 }
@@ -178,7 +168,7 @@ section:not(.hero) {
 	padding-top: 1px;
 }
 .service-wrapper {
-	background: #fff;
+	background: $white;
 	padding: 4px;
 	display: block;
 	color: $txt;
@@ -187,7 +177,7 @@ section:not(.hero) {
 	text-decoration: none;
 	display: block;
 	padding: 30px 0;
-	border-radius: 2px;
+	border-radius: 3px;
 	transition: background 0.2s;
 	&:hover { background: $neutral-10; }
 }
@@ -206,6 +196,8 @@ section:not(.hero) {
 	float: left;
 	margin-bottom: 50px;
 	text-align: left;
+	&:nth-child(even) { clear: right; padding-left: 20px; }
+	&:nth-child(odd) { clear: left; padding-right: 20px; }
 }
 
 .service-subtitle {
@@ -241,14 +233,51 @@ section:not(.hero) {
 
 .projects { @extend %clearfix; }
 
-.project-block {
-	margin-bottom: 50px;
+.project-websites {
+	padding-bottom: 15px;
+}
+
+.project-website {
+	margin-bottom: 45px;
 	position: relative;
 	@extend %clearfix;
 }
 
-.project-thumb {
-	margin-bottom: 30px;
+.project-title {
+	h3 { display: inline-block; }
+	.btn {
+		margin-left: 1em;
+		position: relative;
+		top: -4px;
+		float: right;
+	}
+}
+
+.project-shirts {
+	padding: 0 30px 30px;
+	margin-bottom: 15px;
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.project-shirt {
+	display: inline;
+	img {
+		width: 420px;
+		margin: 0 15px;
+	}
+}
+
+.project-logos {
+	margin: -15px;
+}
+
+.project-logo {
+	width: 50%;
+	float: left;
+	padding: 15px;
 }
 
 /***********************
@@ -269,7 +298,8 @@ input[type="text"], input[type="email"], textarea {
 }
 
 button[type="submit"] {
-	@extend .btn;
+	@extend %btn;
+	margin-top: 30px;
 }
 
 textarea {
@@ -290,12 +320,12 @@ textarea {
 *****************************/
 
 #footer {
-	background: $neutral-10;
-	padding: 15px 0;
-    height: 34px;
-    line-height: 34px;
+	background: $white;
+	border-top: 1px solid $neutral-20;
+	padding: 25px 0;
     text-align: center;
-    font-size: 0.95em;
+    font-size: 0.9em;
+    color: $neutral-50;
     @extend %clearfix;
 }
 

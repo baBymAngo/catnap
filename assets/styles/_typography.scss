@@ -1,51 +1,44 @@
 body, input, textarea, button {
-    font: 400 19px/1.4 'proxima-nova', sans-serif;
-    color: $txt;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-font-feature-settings: "liga", "kern";
+	font: 400 19px 'proxima-nova', sans-serif;
+	color: $txt;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga", "kern";
 }
 
 strong, b { font-weight: 600; }
 
 h1, h2, h3 {
-    font-style: normal;
-    font-weight: 300;
-    color: $header;
-    line-height: 1;
-    margin-bottom: 0.25em;
-    text-rendering: optimizeLegibility;
+	font-style: normal;
+	font-weight: 300;
+	color: $header;
+	line-height: 1;
+	text-rendering: optimizeLegibility;
 }
 
-h1 { font-size: 3em; }
-h2 { font-size: 2.4em; }
+h1 { font-size: 3em; margin-bottom: 0.25em; }
+h2 { font-size: 2.4em; margin-bottom: 0.5em; }
 h3 {
-    font-size: 1.4em;
-    font-weight: 400;
+	font-size: 1.4em;
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.4;
+	margin: 0.5em 0;
 }
 
 a {
-    color: inherit;
-    text-decoration: underline;
+	color: inherit;
+	text-decoration: underline;
 }
 
-::-webkit-input-placeholder {
-   color: $neutral-50;
-}
-
-:-moz-placeholder { // Firefox 18-
-   color: $neutral-50;  
-}
-
-::-moz-placeholder {  // Firefox 19+
-   color: $neutral-50;  
-}
-
-:-ms-input-placeholder {  
-   color: $neutral-50;  
-}
+::-webkit-input-placeholder { color: $neutral-50; }
+:-moz-placeholder 			{ color: $neutral-50; }
+::-moz-placeholder 			{ color: $neutral-50; }
+:-ms-input-placeholder 		{ color: $neutral-50; }
 
 ::selection {
 	background: $purple;
-    color: #fff;
+	color: #fff;
 }

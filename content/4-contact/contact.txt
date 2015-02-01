@@ -2,8 +2,8 @@ Title: Contact
 ----
 Hero Header: Say hello.
 ----
-Hero Subheader: Don’t like web forms? Email us at (email: bonjour@catnap.co) from your favorite app—we’ll receive your message all the same.
+Hero Subheader: Our kitty might bite, but we won't. Besides, he doesn't bite hard. Just lil' nibbles, that's all. It means he loves you. Hope you're not allergic.
 ----
-Text: 
+Text: Don’t like web forms? Email us at (email: bonjour@catnap.co) from your favorite app—we’ll receive your message all the same.
 ----
 Textarea Placeholder: Write your message here. Keep it sweet and simple!

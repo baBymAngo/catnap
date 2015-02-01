@@ -15,7 +15,7 @@
 	</div>
 
 	<div class="margin-container">
-		Copyright
+		<?= kirbytext( $site->copyright() ) ?>
 	</div>
 	
 </footer>
