@@ -20,7 +20,7 @@
                         swal("Awesome!", "Your message has been sent. You will receive a confirmation email within a few minutes. Talk to you soon!", "success");
                         break;
                     case 'user error':
-                        swal("Hmm...", "There was a problem with your submission. Double check to make sure your email address is spelled correctly and that you haven't left any areas blank.", "error");
+                        swal("Hmm.", "There was a problem with your submission. Double check to make sure your email address is spelled correctly and that you haven't left any areas blank.", "error");
                         break;
                     case 'fail':
                         swal(":(", "Computer is having a bad day. We can't send your message right now, but if you email bonjour@catnap.co with another application, that will probably work. Sorry about that!", "error");

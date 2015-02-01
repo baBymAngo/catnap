@@ -332,6 +332,7 @@ input[type="text"], input[type="email"], textarea {
 	padding: 10px;
 	margin-bottom: $spacing;
 	border-radius: 3px;
+	transition: all 0.1s ease-out;
 	&:active, &:focus {
 		border-color: $purple;
 		box-shadow: 0 0 0 2px $purple;
