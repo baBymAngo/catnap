@@ -6,6 +6,6 @@ Hero Subheader: Things for other people. Things for ourselves. Big things. Littl
 ----
 CTA Header: But wait! There's more.
 ----
-CTA Text: Stationery, posters, business cards, mobile apps, icons... if you can print it out or put it on a screen, we can make it. Go ahead: click that button down below. Together we can make something amazing.
+CTA Text: Stationery, posters, business cards, mobile apps, icons... if you can print it out or put it on a screen, we can make it. Hit that button down below to get in touch. Together we can make something amazing.
 ----
 CTA Button: Contact Team Catnap

@@ -1,40 +1,57 @@
 Title: About
+
 ----
-Hero Header: Small yet mighty.
+
+Principles: 
+
+- 
+  principle: Make it better.
+  principle_desc: "We're constantly asking ourselves: how can we improve this? It's what drives our decisions, but more than that, it's a part of who we are. Every time we push that extra inch, we learn a little bit more about our craft and about ourselves."
+  principle_lr: left
+- 
+  principle: Keep it simple.
+  principle_desc: >
+    Life is pretty simple, overall. Humans
+    tend to overcomplicate things. We do our
+    best not to.
+  principle_lr: right
+- 
+  principle: Quality over quantity.
+  principle_desc: "If you're going to create something, you should create it as best you can, right? Even if it takes a little extra time, we believe that quality—not quantity—is the real marker of excellence."
+  principle_lr: left
+- 
+  principle: Question everything.
+  principle_desc: 'How is this usually accomplished? Can it be done better? Will people understand what we mean? Are we assuming too much? How does this flow? Do we even need [X, Y, Z]? Are we asking too many questions?'
+  principle_lr: right
+- 
+  principle: Stay honest.
+  principle_desc: "A flashy social media campaign won't fix a bad idea. Something isn't exciting just because you call it that. These can be hard truths to swallow, but we do our best to show things as they are. We spotlight the best parts of an idea and try not to glorify the others."
+  principle_lr: right
+- 
+  principle: Have fun.
+  principle_desc: "We do our best work when we're not watching the clock. Lucky for you, when we're passionate about a project, the time couldn't be further from our minds."
+  principle_lr: left
+
 ----
-Hero Subheader: We're a plucky gang of three: two lanky nerds and a bumbling yellow cat. But don't let appearances fool you, because we have something the other guys don't: the power of true love
+
+Hero-header: Small yet mighty.
+
 ----
-Text:
-## Who we are
 
-Catnap is one vibrant designer & one crazy developer driven by a quest for the best. We pride ourselves on being down to earth explorers and problem-solvers who will go above and beyond to get the job done.
+Hero-subheader: We're a small team, but that makes us remarkably agile: we don't have managers or middle-men to get inbetween us and you. We meet with you, we make with you. Simple as that.
 
-[Photos & Bios]
+----
 
-Kyle
-kyledecker.me
+Bios-header: Team Catnap
 
-Liam
-liamscott.me
+----
 
-Sam
-catnap.co
+Bios-subheader: Each of us contributes something valuable to the team. For Liam, bulletproof code and home-cooked meals.  Kyle? Designs and borderline-obsessive perfectionism. And for Sam (a.k.a. Mr. Sir, Mr. Kidden, Cornmuffin), love and warm fuzzies.
 
-## Our philosophy
+----
 
-While we have a fresh outlook on protects, we also have the experience of larger firms. Underlying all our work are three cherished principles:
+Philosophy-header: Our Philosophy
 
-1. Originality -- Our designs are unique, just like you. We would never sell you anything                 that wasn't hand-crafted by us.
-2. Collaboration -- We love to work with folks who recognize the merits of carefully                     considered design. 
-3. Simplicity -- Flashy effects shouldn't get in the way of your message. We believe in                 elegance and the beauty of the written word.   
+----
 
-## Our process 
-
-At Catnap, we believe in candid speech. We won't talk business jargon at you or beat you over the head with complicated marketing charts. This saves time and keeps everyone focused on the real project. 
-
-Detail -- The first step is always learning about you. What does your product feel like? What audience are you trying to reach? What do you want this site to say about you?
-Play -- After we know what you want the site to feel like, we like to play around a bit. It's this step where the magic happens, and your unique expression starts to take shape.
-Build-- We then begin to build out the product. We carefully consider each component to be sure your site is as lean and resilient as possible.
-Deploy-- This is the fun part! This is when your pixel perfect creation hits the web for all of your clients and friends to enjoy. Congratulations. Mission complete. 
-
-We don't waste your time on directionless focus groups or ineffective management. We simply take your ideas and we create.
+Philosophy-subheader: We abide by six simple mantras in our work and in our life. Well, we try to, anyways. Here are the ideas we hold near and dear to our hearts.

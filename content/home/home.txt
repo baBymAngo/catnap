@@ -1,7 +1,23 @@
 Title: Home
 ----
-Adjectives: spirit, class, clarity, you
+Hero Header: Websites with spirit.
 ----
-Text:
-## Stand out from the crowd.
-The internet is enormous. [don't look like every other site] Since your needs are unique, we design everything from scratch. We never buy or resell premade themes or icons.
+Services Header: Here's what we do.
+----
+Services Subheader: Getting a website created can be scary, but we'll walk you through the steps. We've worked with all types of clients—schools, non-profits, artists, even city governments.
+----
+Services Button: See what we've made
+----
+Standout Header: Stand out from the crowd.
+----
+Standout Subheader: Today, many design studios will buy generic themes, make a few minor tweaks, then resell them to clients for a profit. It's hard enough making your voice heard on the internet—your site shouldn't look like 200 others. We design everything from scratch, according to the needs of your individual project.
+----
+Standout Button: Learn more about our philosophy
+----
+Contact Header: Let's talk.
+----
+Contact Subheader: We're based out of Greensboro, North Carolina, but we're happy working with anyone with an internet connection and an open mind.
+----
+Contact Button: Get in touch
+----
+Learn More Button: Learn more

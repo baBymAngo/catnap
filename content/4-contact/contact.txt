@@ -2,8 +2,8 @@ Title: Contact
 ----
 Hero Header: Say hello.
 ----
-Hero Subheader: Our kitty might bite, but we won't. Besides, he doesn't bite hard. Just lil' nibbles, that's all. It means he loves you. Hope you're not allergic.
+Hero Subheader: Our kitty might bite, but we won't. Besides, he doesn't bite hard. Just lil' nibbles, that's all. (It means he loves you.)
 ----
-Text: Don’t like web forms? Email us at (email: bonjour@catnap.co) from your favorite app—we’ll receive your message all the same.
+Text: If you don't like filling out web forms, email us at (email: bonjour@catnap.co) from your favorite app. If you'd rather talk, you can call us at (828) 808-2116.
 ----
 Textarea Placeholder: Write your message here. Keep it sweet and simple!

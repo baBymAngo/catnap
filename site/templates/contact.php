@@ -14,7 +14,7 @@
         	<input type="email" class="contact-form--email" name="email" placeholder="Email">
         	<textarea class="contact-form--message" name="message" placeholder="<?= html( $page->textarea_placeholder() ) ?>"></textarea>
 
-        	<button type="submit">Send Message</button>
+        	<button type="submit" class="btn contact-form--submit">Send Message</button>
         </form>
 
     </div>

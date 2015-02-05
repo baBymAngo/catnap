@@ -16,4 +16,4 @@ Postcode: 27403
 ----
 Country: US
 ----
-Copyright: Copyright © (date: Year) (link: home text: Catnap Creative). We work hard, please don't steal.
+Copyright: Copyright&nbsp;©&nbsp;(date: Year)&nbsp;(link: home text: Catnap Creative). We&nbsp;work&nbsp;hard,&nbsp;please&nbsp;don't&nbsp;steal.

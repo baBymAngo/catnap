@@ -4,8 +4,10 @@
 	<?php snippet('header') ?>
 	<div class="hero-wrapper margin-container">
 		<meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
-		<h1 class="hero-header">Websites with spirit.</h1>
-		<?= kirbytext( $site->description() ) ?>
+		<div class="section-header">
+			<h1 class="hero-header"><?= $page->hero_header(); ?></h1>
+			<?= kirbytext( $site->description() ) ?>
+		</div>
 		<img src="<?= $page->images()->find('macbook.png')->url() ?>" alt="" class="hero-image">
 	</div>
 </section>
@@ -14,32 +16,44 @@
 	<div class="margin-container">
 		<?php $services_page = $site->find('services') ?>
 		<div class="section-header">
-			<h2><?= $services_page->homepage_header() ?></h2>
-			<?= kirbytext( $services_page->homepage_subheader() ) ?>
+			<h2><?= $page->services_header() ?></h2>
+			<?= kirbytext( $page->services_subheader() ) ?>
 		</div>
 		<ul class="services-list">
 			<?php $services = $services_page->children()  ?>
 			<?php foreach( $services as $service ): ?>
 				<li class="service" itemscope itemtype="https://schema.org/Service">
 					<div class="service-wrapper">
-						<a href="<?= $services_page->url() ?>#<?= $service->slug() ?>" class="service-link">
+						<div class="service-link"> <!-- href="[php]$services_page->url()[php]#[php]$service->slug()[php]" -->
 							<?php $src = $service->images()->first()->url() ?>
 							<img src="<?= $src ?>" alt="<?= $service->title() ?>" class="service-image" itemprop="image">
 							<h3 class="service-name" itemprop="name"><?= html( $service->title() ) ?></h3>
-						</a>
+						</div>
 					</div>
 				</li>
 			<?php endforeach ?>
 		</ul>
+		<a href="works" class="btn"><?= $page->services_button() ?></a>
 	</div>
 </section>
 
-<section class="content-section content-section--light stand-out">
+<section class="content-section content-section--light content-section--stand-out">
 	<div class="margin-container">
 		<div class="section-header">
-			<?= kirbytext( $page->text() ) ?>
+			<h2><?= $page->standout_header() ?></h2>
+			<?= kirbytext( $page->standout_subheader() ) ?>
 		</div>
-		<img src="<?= $page->image('stand-out.png')->url() ?>" alt=""> 
+		<a href="about" class="btn"><?= $page->standout_button() ?></a>
+	</div>
+</section>
+
+<section class="content-section content-section--lets-talk">
+	<div class="margin-container">
+		<div class="section-header">
+			<h2><?= $page->contact_header() ?></h2>
+			<?= kirbytext( $page->contact_subheader() ) ?>
+		</div>
+		<a href="contact" class="btn"><?= $page->contact_button() ?></a> <span class="or">or</span> <a href="about" class="btn btn-grey"><?= $page->learn_more_button() ?></a>
 	</div>
 </section>
 

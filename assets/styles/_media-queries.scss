@@ -1,11 +1,47 @@
+@media screen and (max-width: $pagewidth) {
+	body { font-size: 19px; }
+}
+
 @media screen and (max-width: $breakpoint-large){
 	body { font-size: 18px; }
+	.contact-form--firstname, .contact-form--lastname { width: 49%; }
+	.contact-form--lastname { margin-left: 2%; margin-right: 0; }
+	.contact-form--email { width: 100%; }
 }
 
 @media screen and (max-width: $breakpoint-medium){
 	body { font-size: 17px; }
+	.service { 
+		width: 50%;
+	}
+	.member {
+		text-align: left;
+		width: 100%;
+		.member-image {
+			float: left;
+			width: 50%; 
+			margin-right: $spacing*2;
+		}
+	}
+	.project-shirt img { width: 300px; }
 }
 
 @media screen and (max-width: $breakpoint-small){
 	body { font-size: 16px; }
+	.project-shirt img { width: 270px; }
+	.project-logo { width: 100%; }
+	.principles .principle { margin: $spacing*3 $spacing*2; }
+	.principles-left .principle {
+		margin-left: 0; 
+		&:after { right: -$spacing*2; }
+	}
+	.principles-right .principle {
+		margin-right: 0;
+		&:after { left: -$spacing*2; }
+	}
+	.contact-form--firstname, .contact-form--lastname, .contact-form--email {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }

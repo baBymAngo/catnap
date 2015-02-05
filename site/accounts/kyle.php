@@ -6,7 +6,6 @@ password: >
   $2a$10$NIwc/68FKLjmXVM9VaurVeSaehpRlgBRVoANt5MtFuzyEyyVVsD2u
 language: en
 role: admin
-token: 0b0381fc4afb7d45e9f406b3bcdae29fa93b3ffa
+token: c6a07ebe63634d9c1877d695a8fe7e35b968f5d1
 history:
-  - work/bff
-  - work/right-angle
+  - about

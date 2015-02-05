@@ -107,17 +107,15 @@ img { border-radius: 3px; }
 	text-align: center;
 	color: white;
 	p {
-		max-width: 600px;
+		max-width: 630px;
 		color: $neutral-50;
-		margin: $spacing auto $spacing*4;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
 .hero-header {
 	color: inherit;
-	margin-top: $spacing*4;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .hero-image {
@@ -126,36 +124,24 @@ img { border-radius: 3px; }
 	pointer-events: none;
 }
 
-#home .hero { box-shadow: inset 0 -20px 0 $white; }
+#home .hero {
+	box-shadow: inset 0 -20px 0 $white;
+	.section-header p {
+		max-width: 570px;
+	}
+}
 
 /***********************
 	     HOME
 ***********************/
 
-// Hero
-.typed-cursor {
-	display: inline-block;
-	width: 2px;
-	height: 100%;
-	background: #fff;
-	border-radius: 3px;
-	margin-left: 10px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-	overflow: hidden; // Hide default pipe
-	vertical-align: top;
-    opacity: 1;
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    75% { opacity: 0; }
-    100% { opacity: 0; }
+.content-section--services {
+	text-align: center;
+	padding-bottom: $spacing*4;
 }
 
 .services-list {
-	margin-bottom: $spacing*4;
+	margin-bottom: $spacing*3;
 	background: radial-gradient(center, ellipse closest-side, $neutral-30 50%, $white 100%);
 	@extend %clearfix;
 }
@@ -180,7 +166,7 @@ img { border-radius: 3px; }
 	padding: $spacing*2 0;
 	border-radius: 3px;
 	transition: background 0.2s;
-	&:hover { background: $neutral-10; }
+	// &:hover { background: $neutral-10; }
 }
 .service-image {
 	width: 120px;
@@ -206,25 +192,23 @@ img { border-radius: 3px; }
 	margin-bottom: 25px;
 }
 
-.instagram-block {
-	.instagram-wrapper { 
-		position: relative;
-	}
-	#instagram {
-		position: relative;
-		width: 100%;
-		background: $white;
-		@extend %clearfix;
-	}
-	.shot {
-		display: block;
-		float: left;
-		width: 16.662%;
-		overflow: hidden;
-		opacity: 0.8;
-		transition: opacity 0.3s ease;
-		&:hover { opacity: 1; }
-	}
+.content-section--stand-out {
+	background-image: url(../images/stand-out.png);
+	background-repeat: no-repeat;
+	background-position: bottom 45px center;
+	padding-bottom: 480px;
+	text-align: center;
+}
+
+.content-section--lets-talk {
+	text-align: center;
+	padding-bottom: $spacing*4;
+}
+
+.or {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0 $spacing;
 }
 
 
@@ -322,6 +306,98 @@ img { border-radius: 3px; }
 }
 
 /***********************
+	     ABOUT
+***********************/
+
+.content-section--members {
+	text-align: center;
+	padding-bottom: $spacing*4;
+}
+
+.members {
+	@extend %clearfix;
+	margin-right: -$spacing;
+	margin-left: -$spacing;
+	margin-bottom: $spacing*2;
+}
+
+.member {
+	padding: 0 $spacing;
+	margin-bottom: $spacing*2;
+	width: 33.33333%;
+	float: left;
+}
+
+.member-name {
+	margin: $spacing 0;
+}
+
+.principles {
+	@extend %clearfix;
+	text-align: center;
+	margin-bottom: $spacing*4;
+	.principle {
+		margin: $spacing*4 $spacing*3;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			width: 14px;
+			height: 14px;
+			border: 2px solid $purple;
+			background: $neutral-10;
+			border-radius: 50%;
+			position: absolute;
+			top: 5px;
+			z-index: 5;
+		}
+	}
+}
+
+.principles-column {
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+.principles-left {
+	text-align: right;
+	.principle {
+		margin-left: 0;
+		&:after {
+			right: -$spacing*3;
+			transform: translate(50%, 0);
+		}
+	}
+}
+
+.principles-right {
+	text-align: left;
+	box-shadow: -1px 0 0 $purple, inset 1px 0 0 $purple;
+	&:before, &:after {
+		content: '';
+		display: block;
+		width: 14px;
+		height: 14px;
+		border: 2px solid $purple;
+		background: $purple;
+		border-radius: 50%;
+		position: absolute;
+		transform: translate(-50%, 0);
+	}
+	&:before { top: -12px; }
+	&:after { bottom: -12px; }
+	.principle {
+		margin-right: 0;
+		&:first-child:after { display: none; }
+		&:after {
+			left: -$spacing*3;
+			transform: translate(-50%, 0)
+		}
+	}
+}
+
+/***********************
 	    CONTACT
 ***********************/
 
@@ -330,7 +406,6 @@ input[type="text"], input[type="email"], textarea {
 	background: $neutral-10;
 	border: 1px solid $neutral-30;
 	padding: 10px;
-	margin-bottom: $spacing;
 	border-radius: 3px;
 	transition: all 0.1s ease-out;
 	&:active, &:focus {
@@ -339,23 +414,28 @@ input[type="text"], input[type="email"], textarea {
 	}
 }
 
-button[type="submit"] {
-	@extend %btn;
-	margin-top: $spacing*2;
-}
-
-textarea {
-	resize: vertical;
+.contact-form {
+	padding-bottom: $spacing*4;
+	text-align: center;
 }
 
 .contact-form--firstname, .contact-form--lastname, .contact-form--email {
 	width: 32%;
 	float: left;
+	margin-bottom: $spacing;
 }
 
 .contact-form--lastname { margin-right: 2%; margin-left: 2%; }
 
-.contact-form--message { width: 100%; min-height: 280px; }
+.contact-form--message {
+	resize: vertical;
+	width: 100%;
+	min-height: 280px;
+}
+
+.contact-form--submit {
+	margin-top: $spacing*2;
+}
 
 /****************************
           FOOTER
