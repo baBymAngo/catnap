@@ -1,9 +1,7 @@
-@media screen and (max-width: $pagewidth) {
-	body { font-size: 19px; }
-}
-
 @media screen and (max-width: $breakpoint-large){
 	body { font-size: 18px; }
+
+	// Contact
 	.contact-form--firstname, .contact-form--lastname { width: 49%; }
 	.contact-form--lastname { margin-left: 2%; margin-right: 0; }
 	.contact-form--email { width: 100%; }
@@ -11,9 +9,20 @@
 
 @media screen and (max-width: $breakpoint-medium){
 	body { font-size: 17px; }
-	.service { 
-		width: 50%;
+	h1 { font-size: 2.4em; }
+	h2 { font-size: 2.2em; }
+
+	// Home
+	.service { width: 50%; }
+	.content-section--stand-out {
+		background-size: 600px;
+		padding-bottom: 360px;
 	}
+
+	// Works
+	.project-shirt img { width: 300px; }
+
+	// About
 	.member {
 		text-align: left;
 		width: 100%;
@@ -23,13 +32,6 @@
 			margin-right: $spacing*2;
 		}
 	}
-	.project-shirt img { width: 300px; }
-}
-
-@media screen and (max-width: $breakpoint-small){
-	body { font-size: 16px; }
-	.project-shirt img { width: 270px; }
-	.project-logo { width: 100%; }
 	.principles .principle { margin: $spacing*3 $spacing*2; }
 	.principles-left .principle {
 		margin-left: 0; 
@@ -39,6 +41,54 @@
 		margin-right: 0;
 		&:after { left: -$spacing*2; }
 	}
+}
+
+@media screen and (max-width: $breakpoint-small){
+	body { font-size: 16px; }
+	.logo {
+		float: none;
+		top: 8px;
+	}
+	.main-menu {
+		display: block;
+		margin: $spacing auto 0;
+		float: none;
+	}
+
+	// Home
+	.service { width: 100%; }
+	.content-section--lets-talk .btn { width: 60%; }
+	.or {
+		display: block;
+		margin: $spacing;
+	}
+
+	// Works
+	.project-shirt img { width: 270px; }
+	.project-logo { width: 100%; }
+
+	// About
+	.principles-column { width: 100%; }
+	.principles-right .principle:first-child:after { display: block; }
+	.principles-left {
+		box-shadow: 1px 0 0 $purple, inset -1px 0 0 $purple;
+		&:before, &:after {
+			content: '';
+			display: block;
+			width: 14px;
+			height: 14px;
+			border: 2px solid $purple;
+			background: $purple;
+			border-radius: 50%;
+			position: absolute;
+			right: 0;
+			transform: translate(50%, 0);
+		}
+		&:before { top: -12px; }
+		&:after { bottom: -12px; }
+	}
+
+	// Contact
 	.contact-form--firstname, .contact-form--lastname, .contact-form--email {
 		width: 100%;
 		margin-left: 0;

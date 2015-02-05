@@ -51,6 +51,7 @@ $breakpoint-small: 400px;
 	padding: 0.5em 1em;
 	border-radius: 5px;
 	margin: 0 auto;
+	transition: background 0.2s ease;
 	&:hover {
 		cursor: pointer;
 		background: $purple - 10;

@@ -47,7 +47,7 @@
 	</div>
 </section>
 
-<section class="content-section content-section--lets-talk">
+<section class="content-section content-section--dark content-section--lets-talk">
 	<div class="margin-container">
 		<div class="section-header">
 			<h2><?= $page->contact_header() ?></h2>

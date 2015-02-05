@@ -19,6 +19,25 @@ img { border-radius: 3px; }
 	& + .content-section { border-top: 1px solid $neutral-20; }
 }
 
+.content-section--dark {
+	background-color: $black;
+	background-image: url(../images/stars.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	color: $neutral-50;
+	h2 { color: $white; }
+	.btn-grey {
+		background: $neutral-90;
+		color: $neutral-50;
+		&:hover { background: $neutral-80; }
+	}
+}
+
+.content-section--dark + #footer {
+	background: $black;
+	border-color: $neutral-100;
+}
+
 .margin-container {
 	position: relative;
 	max-width: $pagewidth;
@@ -48,7 +67,6 @@ img { border-radius: 3px; }
 
 .logo {
     float: left;
-    height: 34px;
     position: relative;
     top: 1px;
     svg { overflow: visible; }
@@ -75,13 +93,16 @@ img { border-radius: 3px; }
 
 .main-menu {
     float: right;
+    margin-right: -10px;
+    @extend %clearfix;
     a {
-        margin-left: 1.5em;
+        margin-left: 10px;
+        margin-right: 10px;
         height: 34px;
         line-height: 34px;
         border-radius: 4px;
         color: $neutral-60;
-        float: left;
+        display: inline-block;
         font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
@@ -415,7 +436,7 @@ input[type="text"], input[type="email"], textarea {
 }
 
 .contact-form {
-	padding-bottom: $spacing*4;
+	padding-bottom: $spacing*2;
 	text-align: center;
 }
 
