@@ -13,6 +13,11 @@
 	h2 { font-size: 2.2em; }
 
 	// Home
+	.hero-laptop {
+		background-image: url(../images/sam.png);
+		background-position: bottom $spacing*4 center;
+		padding-bottom: 390px;
+	}
 	.service { width: 50%; }
 	.content-section--stand-out {
 		background-size: 600px;
@@ -59,7 +64,7 @@
 	}
 
 	// Home
-	.services-list { margin-left: -$spacing*2; margin-right: -$spacing*2; }
+	.services-list { margin-left: -$spacing*2; margin-right: -$spacing*2; margin-top: -$spacing; }
 	.service-image { width: 100px; }
 	.content-section--lets-talk .btn { min-width: 50%; }
 	.or {

@@ -2,13 +2,14 @@
 
 <section id="hero" class="hero">
 	<?php snippet('header') ?>
-	<div class="hero-wrapper margin-container">
-		<meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
-		<div class="section-header">
-			<h1 class="hero-header"><?= $page->hero_header(); ?></h1>
-			<?= kirbytext( $site->description() ) ?>
+	<div class="hero-laptop">
+		<div class="margin-container">
+			<meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
+			<div class="section-header">
+				<h1 class="hero-header"><?= $page->hero_header(); ?></h1>
+				<?= kirbytext( $site->description() ) ?>
+			</div>
 		</div>
-		<img src="<?= $page->images()->find('macbook.png')->url() ?>" alt="" class="hero-image">
 	</div>
 </section>
 
