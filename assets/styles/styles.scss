@@ -217,6 +217,7 @@ img { border-radius: 3px; }
 	background-image: url(../images/stand-out.png);
 	background-repeat: no-repeat;
 	background-position: bottom 45px center;
+	background-size: 848px;
 	padding-bottom: 480px;
 	text-align: center;
 }
@@ -465,7 +466,7 @@ input[type="text"], input[type="email"], textarea {
 #footer {
 	background: $white;
 	border-top: 1px solid $neutral-20;
-	padding: 25px 0;
+	padding: $spacing*2 0;
     text-align: center;
     font-size: 0.9em;
     color: $neutral-50;
