@@ -8,6 +8,15 @@ body { background: $body-bg; }
 
 img { border-radius: 3px; }
 
+#main { 
+	position: relative;
+	z-index: 999; 
+	transition: transform 0.3s ease;
+	&.nav-is-open {
+		transform: translate(0, $mobile-menu-height);
+	}
+}
+
 .content-section {
 	background: $white;
 	@extend %clearfix;
@@ -114,6 +123,27 @@ img { border-radius: 3px; }
             //background: $neutral-100;
         }
     }
+}
+
+.mobile-nav { 
+	display: inline-block; 
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	a {
+		display: block;
+		text-decoration: none;
+		padding: 4px 0;
+	}
+}
+
+.menu-icon {
+	display: none;
+	float: right;
+	height:18px;
+	width: 23px;
+	margin-top: 10px;
+    background:linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%);
 }
 
 /***********************

@@ -63,9 +63,10 @@
 		top: 8px;
 	}
 	.main-menu {
+		display: none;
+	}
+	.menu-icon {
 		display: block;
-		margin: $spacing auto 0;
-		float: none;
 	}
 
 	// Home

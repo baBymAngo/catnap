@@ -26,4 +26,5 @@
 </head>
 
 <body id="<?= html($page->slug()) ?>">
+	<?php snippet('mobile-nav') ?>
 	<main id="main">
