@@ -21,8 +21,9 @@
 
 	<script src="//use.typekit.net/xbi8rlt.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+
+	<?php snippet('analytics') ?>
 </head>
 
 <body id="<?= html($page->slug()) ?>">
-	<?php snippet('analytics') ?>
 	<main id="main">

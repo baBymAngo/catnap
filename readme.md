@@ -19,13 +19,11 @@ Our work wouldn't be possible without the dozens of designers and developers who
 	- Sublime Text <http://www.sublimetext.com>
 	- Transmit <http://panic.com/transmit/>
 - Javascript Libraries
-	- Instafeed <http://instafeedjs.com>
 	- JQuery <http://jquery.com/>
-	- Typed.js <http://www.mattboldt.com/demos/typed-js/>
 - Content Management System
 	- Kirby <http://getkirby.com>
 - Hosting
-	- HostGator <http://www.hostgator.com/>
+	- a small orange <https://asmallorange.com/>
 
 ## Contact
 
