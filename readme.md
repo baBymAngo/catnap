@@ -13,17 +13,20 @@ Our work wouldn't be possible without the dozens of designers and developers who
 - Applications
 	- Codekit <https://incident57.com/codekit/>
 	- Github for Mac <https://mac.github.com/> and Windows <https://windows.github.com/>
+	- Github for Windows <https://windows.github.com/>
 	- Koala <http://koala-app.com/>
 	- MAMP <http://www.mamp.info/en/> and WAMP <http://www.wampserver.com/en/>
+	- XAMPP <https://www.apachefriends.org/index.html>
 	- Sketch <http://bohemiancoding.com/sketch/>
 	- Sublime Text <http://www.sublimetext.com>
 	- Transmit <http://panic.com/transmit/>
+	- Filezilla <https://filezilla-project.org/>
 - Javascript Libraries
 	- JQuery <http://jquery.com/>
 - Content Management System
 	- Kirby <http://getkirby.com>
 - Hosting
-	- a small orange <https://asmallorange.com/>
+	- A Small Orange <https://asmallorange.com/>
 
 ## Contact
 
