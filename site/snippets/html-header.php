@@ -24,5 +24,5 @@
 </head>
 
 <body id="<?= html($page->slug()) ?>">
-	<div class="elastic-color"></div>
+	<?php snippet('analytics') ?>
 	<main id="main">
