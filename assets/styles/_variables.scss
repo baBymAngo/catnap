@@ -48,7 +48,7 @@ $breakpoint-small: 400px;
 	border: none;
 	color: #fff;
 	text-decoration: none;
-	padding: 0.5em 1em;
+	padding: 0.75em 1em;
 	border-radius: 5px;
 	margin: 0 auto;
 	transition: background 0.2s ease;
@@ -63,6 +63,7 @@ $breakpoint-small: 400px;
 	}
 	&.btn-tiny {
 		font-size: 0.65em;
+		padding: 0.5em 1em;
 		letter-spacing: 1px;
 		margin: 0;
 		text-transform: uppercase;
