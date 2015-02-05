@@ -9,26 +9,27 @@ if ( $_SERVER["REQUEST_METHOD"] == "POST" ) {
 	$lastName = str_replace( array("\r","\n"), array(" "," "), $lastName );
 
 	$address = filter_var(trim($_POST['address']), FILTER_SANITIZE_EMAIL);
-	$message = trim( $_POST['message'] );
+	$message = trim($_POST['message']);
+	$messageBrs = nl2br($message);
 
 	$confirmationMessage = "
 	<html>
 	<head>
 		<title>Confirmation Message</title>
-		<style>
-			// CSS for the email goes here	
-		</style>
 	</head>
 	<body>
-		<h3>Hey $firstName,</h3>
-		<p>We've received your message and will respond within 48 hours, although we usually reply much sooner than that. If for some reason you don't hear from us, send another email to bonjour@catnap.co and we'll get back to you as soon as possible.</p><br>
-
-		<p>Thanks,</p>
-		<p>Kyle & Liam</p>
-		<p>Team Catnap</p>
-		<p>catnap.co</p><br>
-
-		<blockquote>".$message."</blockquote>
+		<div style='padding-bottom: 6px;'>
+			<p>Hey $firstName,</p>
+			<p>We've received your message and will respond within 48 hours, although we usually reply much sooner than that. If for some reason you don't hear from us, send another email to bonjour@catnap.co and we'll get back to you as soon as possible.</p>
+			<p>Thanks,</p>
+			<p><b>Kyle & Liam</b><br>
+			Team Catnap<br>
+			catnap.co</p>
+		</div>
+		
+		<div style='border-top: 1px solid #dddddd; padding-top: 6px;'>
+			<p style='color: #aaaaaa;'>$messageBrs</p>
+		</div>
 	</body>
 	</html>
 	";
