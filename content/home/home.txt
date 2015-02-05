@@ -1,6 +1,6 @@
 Title: Home
 ----
-Hero Header: Websites with spirit.
+Hero Header: Websites with&nbsp;spirit.
 ----
 Services Header: Here's what we do.
 ----

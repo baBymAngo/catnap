@@ -13,9 +13,13 @@
 	h2 { font-size: 2.2em; }
 
 	// Home
+	#home {
+		.hero { box-shadow: none; }
+		.hero-header { font-size: 3.6em; }
+	}
 	.hero-laptop {
 		background-image: url(../images/sam.png);
-		background-position: bottom $spacing*4 center;
+		background-position: bottom $spacing*2 center;
 		background-size: 345px;
 		padding-bottom: 300px;
 	}
