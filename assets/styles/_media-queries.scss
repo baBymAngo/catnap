@@ -59,8 +59,9 @@
 	}
 
 	// Home
-	.service-image { width: 90px; }
-	.content-section--lets-talk .btn { width: 60%; }
+	.services-list { margin-left: -$spacing; margin-right: -$spacing; }
+	.service-image { width: 100px; }
+	.content-section--lets-talk .btn { width: 50%; }
 	.or {
 		display: block;
 		margin: $spacing;

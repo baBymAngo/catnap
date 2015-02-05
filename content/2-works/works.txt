@@ -4,7 +4,7 @@ Hero Header: Things we've made.
 ----
 Hero Subheader: Things for other people. Things for ourselves. Big things. Little things. All sorts of things. If you see something you like, (link: contact text: send us a thing).
 ----
-CTA Header: But wait! There's more.
+CTA Header: But&nbsp;wait! There's&nbsp;more.
 ----
 CTA Text: Stationery, posters, business cards, mobile apps, icons... if you can print it out or put it on a screen, we can make it. Hit that button down below to get in touch. Together we can make something amazing.
 ----

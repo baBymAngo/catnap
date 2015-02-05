@@ -295,6 +295,8 @@ img { border-radius: 3px; }
 	.btn {
 		margin-left: 1em;
 		float: right;
+		position: relative;
+		top: -1px;
 	}
 }
 
@@ -424,6 +426,7 @@ img { border-radius: 3px; }
 ***********************/
 
 input[type="text"], input[type="email"], textarea {
+	-webkit-appearance: none; // Hide inner box shadow in iOS Safari
 	display: block;
 	background: $neutral-10;
 	border: 1px solid $neutral-30;
