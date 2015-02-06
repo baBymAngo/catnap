@@ -1,6 +1,6 @@
 (function($){
 	$('.menu-icon').on('click', function(){
 		$(this).toggleClass('clicked');
-		$('main#main').toggleClass('nav-is-open')
+		$('.mobile-menu').toggleClass('show-menu');
 	});
-})(jQuery)
+})(jQuery);

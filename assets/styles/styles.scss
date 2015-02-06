@@ -8,13 +8,10 @@ body { background: $body-bg; }
 
 img { border-radius: 3px; }
 
-#main { 
-	position: relative;
-	z-index: 999; 
-	transition: transform 0.3s ease;
-	&.nav-is-open {
-		
-	}
+#main {
+	transform: translate3d(0,0,0);
+	transition: transform 0.5s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
 .content-section {
@@ -124,12 +121,36 @@ img { border-radius: 3px; }
     }
 }
 
-.mobile-nav {
+.mobile-menu {
+	z-index: 9999;
+	position: absolute;
+	height: 58px;
 	padding: $spacing 0;
 	width: 100%;
 	background: $black;
 	border-bottom: 1px solid $neutral-100;
 	text-align: center;
+	transform: translate3d(0,-58px,0);
+	transition: transform 0.5s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+
+	.main-menu a {
+		transform: translate3d(-1600px,0,0);
+		transition: transform 0s 0.4s;
+		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+		&:nth-child(2) { transform: translate3d(-1200px,0,0); }
+		&:nth-child(3) { transform: translate3d(-800px,0,0); }
+		&:nth-child(4) { transform: translate3d(-400px,0,0); }
+	}
+	&.show-menu {
+		transform: translate3d(0,0,0);
+		.main-menu a {
+			transform: translate3d(0,0,0);
+			transition: transform 0.9s;
+			transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+		}
+		& + #main { transform: translate3d(0,58px,0); }
+	}
 }
 
 .menu-icon {
@@ -137,8 +158,13 @@ img { border-radius: 3px; }
 	float: right;
 	height:33px;
 	width: 33px;
-	background: $neutral-100 url(../images/hamburger.svg) center no-repeat;
+	background-color: $neutral-100;
+	background-image: url(../images/hamburger.svg);
+	background-position: center;
+	background-repeat: no-repeat;
 	border-radius: 3px;
+	transition: background-color 0.2s;
+	&:hover { background-color: $neutral-90; }
 }
 
 /***********************

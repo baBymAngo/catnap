@@ -26,7 +26,7 @@
 </head>
 
 <body id="<?= html($page->slug()) ?>">
-	<div class="mobile-nav">
+	<div class="mobile-menu">
 		<div class="margin-container">
 			<?php snippet('nav') ?>
 		</div>
