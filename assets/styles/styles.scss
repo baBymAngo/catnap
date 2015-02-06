@@ -134,12 +134,12 @@ img { border-radius: 3px; }
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 
 	.main-menu a {
-		transform: translate3d(-1600px,0,0);
+		transform: translate3d(-2400px,0,0);
 		transition: transform 0s 0.4s;
 		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-		&:nth-child(2) { transform: translate3d(-1200px,0,0); }
-		&:nth-child(3) { transform: translate3d(-800px,0,0); }
-		&:nth-child(4) { transform: translate3d(-400px,0,0); }
+		&:nth-child(2) { transform: translate3d(-2000px,0,0); }
+		&:nth-child(3) { transform: translate3d(-1600px,0,0); }
+		&:nth-child(4) { transform: translate3d(-1200px,0,0); }
 	}
 	&.show-menu {
 		transform: translate3d(0,0,0);
@@ -510,6 +510,7 @@ input[type="text"], input[type="email"], textarea {
 .contact-form--lastname { margin-right: 2%; margin-left: 2%; }
 
 .contact-form--message {
+	clear: both;
 	resize: vertical;
 	width: 100%;
 	min-height: 210px;
