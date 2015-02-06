@@ -4,7 +4,7 @@
 	<?php if($page->isHomepage()): ?>
 		<title><?= html($site->title()) ?></title>
 	<?php else: ?>
-		<title><?= html($page->title()) ?></title>
+		<title><?= html($page->title()) ?> &middot; <?= html($site->title()) ?></title>
 	<?php endif ?>
 	<meta name="description" content="<?php echo html($site->description()) ?>" />
 	<meta name="keywords" content="<?php echo html($site->keywords()) ?>" /> 
