@@ -16,6 +16,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta property="og:image" content="http://catnap.co/assets/images/facebook-preview.png" />
+	<meta property="og:url" content="<?= $site->url()) ?>" />
 
 	<link rel="icon" href="favicon.ico" />
 	
