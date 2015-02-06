@@ -12,7 +12,8 @@
 	<meta charset="utf-8" />
 	<meta name="robots" content="index, follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<link rel="icon" href="favicon.ico" />
 	
 	<?= css('assets/styles/styles.css') ?>
 	<?= js('assets/js/vendors/modernizr.min.js') ?>

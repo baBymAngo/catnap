@@ -1,3 +1,5 @@
-Title: Error
+Title: 
 ----
-Text: The page has not been found
+Hero Header: 404! Not found.
+----
+Hero Subheader: We couldn't find that page. Try using the navigation at the top—our website isn't very big. If you still can't find what you were looking for, we're always happy to assist at (email: bonjour@catnap.co).
