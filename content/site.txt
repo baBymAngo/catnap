@@ -2,9 +2,9 @@
 ----
 Author: Kyle Decker, Liam Scott
 ----
-Description: We work with small businesses and rad individuals to make things that are worth sharing. 
+Description: We are Catnap Creative: a web design and development studio located in Greensboro, North Carolina. We work with small businesses and rad individuals to make things that are worth sharing.
 ----
-Keywords: design, development, small business, innovation
+Keywords: design, development, web, small business, innovation, greensboro
 ----
 Address: 703 Mayflower Drive
 ----

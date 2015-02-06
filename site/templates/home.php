@@ -4,10 +4,9 @@
 	<?php snippet('header') ?>
 	<div class="hero-laptop">
 		<div class="margin-container">
-			<meta class="adjectives" data-adjectives="<?= $page->adjectives() ?>">
 			<div class="section-header">
 				<h1 class="hero-header"><?= $page->hero_header(); ?></h1>
-				<?= kirbytext( $site->description() ) ?>
+				<?= kirbytext( $page->hero_subheader() ) ?>
 			</div>
 		</div>
 	</div>

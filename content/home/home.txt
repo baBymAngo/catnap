@@ -2,6 +2,8 @@ Title: Home
 ----
 Hero Header: Websites with&nbsp;spirit.
 ----
+Hero Subheader: We work with small businesses and rad individuals to make things that are worth&nbsp;sharing.
+----
 Services Header: Here's what we do.
 ----
 Services Subheader: Getting a website created can be scary, but we'll walk you through the steps. We've worked with all types of clients—schools, non-profits, artists, even city governments.
