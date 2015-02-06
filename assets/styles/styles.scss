@@ -13,7 +13,7 @@ img { border-radius: 3px; }
 	z-index: 999; 
 	transition: transform 0.3s ease;
 	&.nav-is-open {
-		transform: translate(0, $mobile-menu-height);
+		
 	}
 }
 
@@ -43,7 +43,7 @@ img { border-radius: 3px; }
 }
 
 .content-section--dark + #footer {
-	background: $black;
+	background: darken($black, 3%);
 	border-color: $neutral-100;
 }
 
@@ -68,9 +68,9 @@ img { border-radius: 3px; }
 ************************/
 
 #header {
-	background: $black;
+	background: darken($black, 3%);
+	border-bottom: 1px solid $neutral-100;
     padding: $spacing 0;
-    border-bottom: 1px solid $neutral-100;
     @extend %clearfix;
 }
 
@@ -78,8 +78,8 @@ img { border-radius: 3px; }
     float: left;
     position: relative;
     top: 1px;
-    svg { overflow: visible; }
-    &:hover .logo-letter {
+    svg { display: block; }
+    &:hover path {
         animation: rainbow 0.3s steps(1) infinite; 
     }
 }
@@ -103,12 +103,11 @@ img { border-radius: 3px; }
 .main-menu {
     float: right;
     margin-right: -10px;
-    @extend %clearfix;
     a {
         margin-left: 10px;
         margin-right: 10px;
-        height: 34px;
-        line-height: 34px;
+        height: 33px;
+        line-height: 33px;
         border-radius: 4px;
         color: $neutral-60;
         display: inline-block;
@@ -125,25 +124,21 @@ img { border-radius: 3px; }
     }
 }
 
-.mobile-nav { 
-	display: inline-block; 
-	position: fixed;
+.mobile-nav {
+	padding: $spacing 0;
 	width: 100%;
-	background-color: white;
-	a {
-		display: block;
-		text-decoration: none;
-		padding: 4px 0;
-	}
+	background: $black;
+	border-bottom: 1px solid $neutral-100;
+	text-align: center;
 }
 
 .menu-icon {
 	display: none;
 	float: right;
-	height:18px;
-	width: 23px;
-	margin-top: 10px;
-    background:linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%);
+	height:33px;
+	width: 33px;
+	background: $neutral-100 url(../images/hamburger.svg) center no-repeat;
+	border-radius: 3px;
 }
 
 /***********************
@@ -282,7 +277,7 @@ img { border-radius: 3px; }
 }
 
 .project-website {
-	margin-bottom: $spacing*3;
+	margin-bottom: $spacing*4;
 	position: relative;
 	@extend %clearfix;
 }

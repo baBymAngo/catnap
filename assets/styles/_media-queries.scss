@@ -11,6 +11,8 @@
 	body { font-size: 17px; }
 	h1 { font-size: 2.4em; }
 	h2 { font-size: 2.2em; }
+	#main .main-menu { display: none; }
+	.menu-icon { display: block; }
 
 	// Home
 	#home {
@@ -58,16 +60,6 @@
 	h1 { font-size: 2.2em; }
 	h2 { font-size: 2em; font-weight: 400; }
 	h3 { font-size: 1.2em; }
-	.logo {
-		float: none;
-		top: 8px;
-	}
-	.main-menu {
-		display: none;
-	}
-	.menu-icon {
-		display: block;
-	}
 
 	// Home
 	.services-list { margin-left: -$spacing*2; margin-right: -$spacing*2; margin-top: -$spacing; }
