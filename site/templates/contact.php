@@ -21,5 +21,8 @@
 </section>
 
 <?php snippet('footer') ?>
-<?= js('assets/js/contact.js')  ?>
+
+<?= js('assets/js/vendors/sweet-alert.min.js') ?>
+<?= js('assets/js/contact.min.js')  ?>
+
 <?php snippet('html-footer') ?>

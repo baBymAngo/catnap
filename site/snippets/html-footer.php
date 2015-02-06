@@ -1,6 +1,6 @@
 	</main>
 
-<?= js('assets/js/site.js') ?>
+<?= js('assets/js/site.min.js') ?>
 </body>
 
 </html>
