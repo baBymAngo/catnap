@@ -13,6 +13,7 @@
 	<meta name="robots" content="index, follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<meta property="og:image" content="assets/images/facebook-preview.png" />
 	<link rel="icon" href="favicon.ico" />
 	
 	<?= css('assets/styles/styles.css') ?>
