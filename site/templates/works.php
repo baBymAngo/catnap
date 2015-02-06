@@ -10,7 +10,7 @@
 		</div>
 		<?php $websites = $websites->children() ?>
 		<?php foreach( $websites as $website ) : ?>
-			<div class="project-website">
+			<div class="project-website" itemscope itemtype="http://schema.org/CreativeWork">
 				<?php $image = $website->images()->find('screenshot.png') ?>
 				<?php if($image): ?>
 					<div class="project-website--browser">
@@ -22,12 +22,12 @@
 							</div>
 							<div class="address-bar"></div>
 						</div>
-						<img src="<?= $image->url() ?>" alt="<?= html( $website->title() )?>" class="project-website--thumb">
+						<img src="<?= $image->url() ?>" alt="<?= html( $website->title() )?>" class="project-website--thumb" itemprop="image">
 					</div>
 				<?php endif ?>
 				<div class="project-content">
 					<div class="project-title">
-						<h3><?= $website->title() ?></h3>
+						<h3 itemprop="name"><?= $website->title() ?></h3>
 						<a class="btn btn-grey btn-tiny" href="<?= $website->link() ?>">Visit the site &#10140;</a>
 					</div>
 					<?= kirbytext( $website->text() ) ?>

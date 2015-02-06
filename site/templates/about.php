@@ -10,11 +10,11 @@
 		<div class="members">
 			<?php $members = $page->find('members')->children() ?>
 			<?php foreach( $members as $member ): ?>
-				<div class="member">
-					<img class="member-image" src="<?= $member->images()->find('portrait.jpg')->url() ?>" alt="<?= $member->name() ?>">
-					<h3 class="member-name"><?= $member->name() ?></h3>
-					<div class="member-job"><?= $member->job() ?></div>
-					<a class="member-link" href="http://<?= $member->link() ?>"><?= $member->link() ?></a> 
+				<div class="member" itemscope itemtype="http://schema.org/Person">
+					<img itemprop="image" class="member-image" src="<?= $member->images()->find('portrait.jpg')->url() ?>" alt="<?= $member->name() ?>">
+					<h3 itemprop="name" class="member-name"><?= $member->name() ?></h3>
+					<div itemtype="jobTitle" class="member-job"><?= $member->job() ?></div>
+					<a itemprop="sameAs" class="member-link" href="http://<?= $member->link() ?>"><?= $member->link() ?></a> 
 				</div>
 			<?php endforeach ?>
 		</div>
