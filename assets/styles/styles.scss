@@ -132,6 +132,7 @@ img { border-radius: 3px; }
 .mobile-menu {
 	z-index: 0;
 	position: absolute;
+	visibility: hidden;
 	height: 58px;
 	padding: $spacing 0;
 	width: 100%;
@@ -143,12 +144,12 @@ img { border-radius: 3px; }
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 
 	.main-menu a {
-		transform: translate3d(-2400px,0,0);
+		transform: translate3d(-1000px,0,0);
 		transition: transform 0s 0.4s;
 		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-		&:nth-child(2) { transform: translate3d(-2000px,0,0); }
-		&:nth-child(3) { transform: translate3d(-1600px,0,0); }
-		&:nth-child(4) { transform: translate3d(-1200px,0,0); }
+		&:nth-child(1) { transform: translate3d(-1000px,0,0); }
+		&:nth-child(2) { transform: translate3d(-800px,0,0); }
+		&:nth-child(3) { transform: translate3d(-600px,0,0); }
 	}
 	&.show-menu {
 		transform: translate3d(0,0,0);
@@ -156,6 +157,9 @@ img { border-radius: 3px; }
 			transform: translate3d(0,0,0);
 			transition: transform 0.9s;
 			transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+			&:nth-child(1) { transition-delay: 0.2s; }
+			&:nth-child(2) { transition-delay: 0.1s; }
+			&:nth-child(3) { transition-delay: 0s; }
 		}
 		& + #main { transform: translate3d(0,58px,0); }
 	}
