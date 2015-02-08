@@ -21,8 +21,6 @@
 	<link rel="icon" href="favicon.ico" />
 	
 	<?= css('assets/styles/styles.css') ?>
-	<?= js('assets/js/vendors/modernizr.min.js') ?>
-	<?= js('//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js') ?>
 
 	<script src="//use.typekit.net/xbi8rlt.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
