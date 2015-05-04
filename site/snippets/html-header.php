@@ -26,6 +26,7 @@
 	<script>try{Typekit.load();}catch(e){}</script>
 
 	<?php snippet('analytics') ?>
+	<?= js('//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js') ?>
 </head>
 
 <body id="<?= html($page->slug()) ?>">
