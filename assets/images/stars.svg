@@ -190,37 +190,37 @@
 
 	<!-- Animations -->
 	<!-- 1, 1a, 1b, etc are all the same... how do you make multiple xlink refs?? -->
-	<animate xlink:href="#twinkle-1" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
-	<animate xlink:href="#twinkle-1a" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
-	<animate xlink:href="#twinkle-1b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
-	<animate xlink:href="#twinkle-1c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
-	<animate xlink:href="#twinkle-1d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
-	<animate xlink:href="#twinkle-1e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
+	<animate xlink:href="#twinkle-1" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.5s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
+	<animate xlink:href="#twinkle-1a" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.4s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
+	<animate xlink:href="#twinkle-1b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.3s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
+	<animate xlink:href="#twinkle-1c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.2s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
+	<animate xlink:href="#twinkle-1d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.1s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
+	<animate xlink:href="#twinkle-1e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" />
 
-	<animate xlink:href="#twinkle-2" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.5s" />
-	<animate xlink:href="#twinkle-2a" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.5s" />
-	<animate xlink:href="#twinkle-2b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.5s" />
-	<animate xlink:href="#twinkle-2c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.5s" />
-	<animate xlink:href="#twinkle-2d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.5s" />
-	<animate xlink:href="#twinkle-2e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.5s" />
+	<animate xlink:href="#twinkle-2" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #B8BEDB; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0s" />
+	<animate xlink:href="#twinkle-2a" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.9s" values="#3C3C5A; #3C3C5A; #B8BEDB; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.2s" />
+	<animate xlink:href="#twinkle-2b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.8s" values="#3C3C5A; #3C3C5A; #B8BEDB; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.4s" />
+	<animate xlink:href="#twinkle-2c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.7s" values="#3C3C5A; #3C3C5A; #B8BEDB; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.6s" />
+	<animate xlink:href="#twinkle-2d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.6s" values="#3C3C5A; #3C3C5A; #B8BEDB; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="0.8s" />
+	<animate xlink:href="#twinkle-2e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.5s" values="#3C3C5A; #3C3C5A; #B8BEDB; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1s" />
 
-	<animate xlink:href="#twinkle-3" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1s" />
-	<animate xlink:href="#twinkle-3a" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1s" />
-	<animate xlink:href="#twinkle-3b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1s" />
-	<animate xlink:href="#twinkle-3c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1s" />
-	<animate xlink:href="#twinkle-3d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1s" />
-	<animate xlink:href="#twinkle-3e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1s" />
+	<animate xlink:href="#twinkle-3" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.1s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1s" />
+	<animate xlink:href="#twinkle-3a" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.3s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.2s" />
+	<animate xlink:href="#twinkle-3b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.5s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.4s" />
+	<animate xlink:href="#twinkle-3c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.9s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.6s" />
+	<animate xlink:href="#twinkle-3d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.7s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.8s" />
+	<animate xlink:href="#twinkle-3e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.5s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="2s" />
 
-	<animate xlink:href="#twinkle-4" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.2s" />
-	<animate xlink:href="#twinkle-4a" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.2s" />
-	<animate xlink:href="#twinkle-4b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.2s" />
-	<animate xlink:href="#twinkle-4c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.2s" />
-	<animate xlink:href="#twinkle-4d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.2s" />
-	<animate xlink:href="#twinkle-4e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.2s" />
+	<animate xlink:href="#twinkle-4" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.2s" />
+	<animate xlink:href="#twinkle-4a" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.4s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.4s" />
+	<animate xlink:href="#twinkle-4b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.6s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.6s" />
+	<animate xlink:href="#twinkle-4c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2.8s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.8s" />
+	<animate xlink:href="#twinkle-4d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="3s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="2s" />
+	<animate xlink:href="#twinkle-4e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="3.2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="2.2s" />
 
-	<animate xlink:href="#twinkle-5" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.7s" />
-	<animate xlink:href="#twinkle-5b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.7s" />
-	<animate xlink:href="#twinkle-5c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.7s" />
-	<animate xlink:href="#twinkle-5d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.7s" />
-	<animate xlink:href="#twinkle-5e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #5F6185; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.7s" />
+	<animate xlink:href="#twinkle-5" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="2s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.8s" />
+	<animate xlink:href="#twinkle-5b" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.8s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.6s" />
+	<animate xlink:href="#twinkle-5c" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.6s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.4s" />
+	<animate xlink:href="#twinkle-5d" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.4s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1.2s" />
+	<animate xlink:href="#twinkle-5e" attributeName="fill" from="#3C3C5A" to="#3C3C5A" dur="1.2s" values="#3C3C5A; #3C3C5A; #7C80A7; #3C3C5A;" keyTimes="0; 0.5; 0.75; 1" repeatCount="indefinite" begin="1s" />
 </svg>
