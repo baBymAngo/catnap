@@ -80,30 +80,40 @@ img { border-radius: 3px; }
     @extend %clearfix;
 }
 
-.logo {
-    float: left;
-    position: relative;
-    top: 1px;
-    svg { display: block; }
-    &:hover path {
-        animation: rainbow 0.3s steps(1) infinite; 
-    }
-}
-
-#logo-c { animation-delay: 0s }
-#logo-a1 { animation-delay: 0.05s }
-#logo-t { animation-delay: 0.1s }
-#logo-n { animation-delay: 0.15s }
-#logo-a2 { animation-delay: 0.2s }
-#logo-p { animation-delay: 0.25s }
-
 @keyframes rainbow {
-    0% { fill: $red; }
+    0%  { fill: $red; }
     16% { fill: $orange; }
     33% { fill: $yellow; }
     50% { fill: $green; }
     66% { fill: $blue; }
     83% { fill: $purple; }
+}
+
+.logo {
+    float: left;
+    position: relative;
+    top: 1px;
+    svg { display: block; }
+    &:hover .logo-letter {
+		animation: rainbow 0.3s steps(1) infinite;
+	}
+}
+
+.logo-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.logo-letter { // Negative delay offsets the start of the animation for rainbow effect
+	&#logo-c  { animation-delay: -0.25s }
+	&#logo-a1 { animation-delay: -0.2s }
+	&#logo-t  { animation-delay: -0.15s }
+	&#logo-n  { animation-delay: -0.1s }
+	&#logo-a2 { animation-delay: -0.05s }
+	&#logo-p  { animation-delay: 0s }
 }
 
 .main-menu {
@@ -122,7 +132,7 @@ img { border-radius: 3px; }
         text-decoration: none;
         font-size: 0.8em;
         letter-spacing: 2px;
-        transition: color 0.2s ease;
+        transition: color 0.1s ease;
         &:hover, &.active {
             color: $white;
         }
@@ -219,6 +229,7 @@ img { border-radius: 3px; }
 	background-image: url(../images/macbook.png);
 	background-position: center bottom;
 	background-repeat: no-repeat;
+	background-size: 700px 430px;
 	padding-bottom: 420px;
 }
 

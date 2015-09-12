@@ -22,7 +22,6 @@
 
 <?php snippet('footer') ?>
 
-<?= js('assets/js/vendors/sweet-alert.min.js') ?>
-<?= js('assets/js/contact.min.js')  ?>
+<?= js('assets/js/contact/contact.min.js')  ?>
 
 <?php snippet('html-footer') ?>
